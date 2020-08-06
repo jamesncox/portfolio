@@ -46,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
-        backgroundColor: "#c62828",
+        // backgroundColor: "#c62828",
+        backgroundColor: "#212121",
         color: "#eeeeee",
         width: drawerWidth,
     },
@@ -57,7 +58,8 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(3),
     },
     icons: {
-        color: "#212121",
+        // color: "#212121",
+        color: "#ff1744",
     },
     text: {
         // fontFamily: "'Codystar', cursive",
@@ -66,6 +68,9 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Codystar', cursive",
         fontWeight: "bold",
         fontSize: "2rem"
+    },
+    divider: {
+        backgroundColor: "#616161"
     }
 }));
 
@@ -82,7 +87,7 @@ function ResponsiveDrawer(props) {
     const drawer = (
         <div>
             <div className={classes.toolbar} />
-            <Divider />
+            <Divider className={classes.divider} />
             <List>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
                     <ListItem button key={text}>
@@ -91,7 +96,7 @@ function ResponsiveDrawer(props) {
                     </ListItem>
                 ))}
             </List>
-            <Divider />
+            <Divider className={classes.divider} />
             <List>
                 {['All mail', 'Trash', 'Spam'].map((text, index) => (
                     <ListItem button key={text}>
@@ -121,7 +126,7 @@ function ResponsiveDrawer(props) {
                     </IconButton>
                     <Typography variant="h6" noWrap className={classes.header}>
                         JAMES COX
-          </Typography>
+                    </Typography>
                 </Toolbar>
             </AppBar>
             <nav className={classes.drawer} aria-label="mailbox folders">
@@ -168,7 +173,7 @@ function ResponsiveDrawer(props) {
                     imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
                     arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
                     donec massa sapien faucibus et molestie ac.
-        </Typography>
+                </Typography>
                 <Typography paragraph>
                     Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
                     facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
@@ -179,7 +184,7 @@ function ResponsiveDrawer(props) {
                     tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
                     nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
                     accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+                </Typography>
             </main>
         </div>
     );
