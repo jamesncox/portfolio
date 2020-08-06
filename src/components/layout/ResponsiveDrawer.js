@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
     appBar: {
         backgroundColor: "#212121",
-        color: "#7e57c2",
+        color: "#ff1744",
         [theme.breakpoints.up('sm')]: {
             width: `calc(100% - ${drawerWidth}px)`,
             marginLeft: drawerWidth,
@@ -46,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
-        backgroundColor: "#673ab7",
+        backgroundColor: "#c62828",
         color: "#eeeeee",
         width: drawerWidth,
     },
@@ -57,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(3),
     },
     icons: {
-        color: "#212121"
+        color: "#212121",
     },
     text: {
         // fontFamily: "'Codystar', cursive",
