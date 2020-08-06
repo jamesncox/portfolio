@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import ResponsiveDrawer from './components/layout/ResponsiveDrawer'
 
 function App() {
   return (
     <div className="App">
-      James Portfolio Site
+      <ResponsiveDrawer />
     </div>
   );
 }
