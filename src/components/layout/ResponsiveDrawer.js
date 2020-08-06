@@ -58,6 +58,14 @@ const useStyles = makeStyles((theme) => ({
     },
     icons: {
         color: "#212121"
+    },
+    text: {
+        // fontFamily: "'Codystar', cursive",
+    },
+    header: {
+        fontFamily: "'Codystar', cursive",
+        fontWeight: "bold",
+        fontSize: "2rem"
     }
 }));
 
@@ -111,8 +119,8 @@ function ResponsiveDrawer(props) {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap>
-                        James Cox
+                    <Typography variant="h6" noWrap className={classes.header}>
+                        JAMES COX
           </Typography>
                 </Toolbar>
             </AppBar>
@@ -149,7 +157,7 @@ function ResponsiveDrawer(props) {
             </nav>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                <Typography paragraph>
+                <Typography paragraph className={classes.text}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                     ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
                     facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
