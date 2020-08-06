@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     appBar: {
-        backgroundColor: "#00acc1",
+        backgroundColor: "#212121",
+        color: "#7e57c2",
         [theme.breakpoints.up('sm')]: {
             width: `calc(100% - ${drawerWidth}px)`,
             marginLeft: drawerWidth,
@@ -45,12 +46,19 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
+        backgroundColor: "#673ab7",
+        color: "#eeeeee",
         width: drawerWidth,
     },
     content: {
+        // backgroundColor: "#bdbdbd",
+        color: "#212121",
         flexGrow: 1,
         padding: theme.spacing(3),
     },
+    icons: {
+        color: "#212121"
+    }
 }));
 
 function ResponsiveDrawer(props) {
@@ -70,7 +78,7 @@ function ResponsiveDrawer(props) {
             <List>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
                     <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                        <ListItemIcon className={classes.icons}>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
@@ -79,7 +87,7 @@ function ResponsiveDrawer(props) {
             <List>
                 {['All mail', 'Trash', 'Spam'].map((text, index) => (
                     <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                        <ListItemIcon className={classes.icons}>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
@@ -104,7 +112,7 @@ function ResponsiveDrawer(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap>
-                        Responsive drawer
+                        James Cox
           </Typography>
                 </Toolbar>
             </AppBar>
