@@ -52,8 +52,10 @@ const useStyles = makeStyles((theme) => ({
         width: drawerWidth,
     },
     content: {
-        // backgroundColor: "#bdbdbd",
-        color: "#212121",
+        backgroundColor: "#424242",
+        // backgroundImage: "url(https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
+        // height: "100vh",
+        color: "#eeeeee",
         flexGrow: 1,
         padding: theme.spacing(3),
     },
