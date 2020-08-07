@@ -63,8 +63,10 @@ const useStyles = makeStyles((theme) => ({
         color: "#5CDB95;",
     },
     text: {
-        fontFamily: "'Varta', sans-serif",
-        fontSize: "1.2rem"
+        // fontFamily: "'Varta', sans-serif",
+        // fontFamily: "'Jura', sans-serif",
+        fontFamily: "'Bungee Inline', cursive",
+        fontSize: "2rem"
     },
     header: {
         fontFamily: "'Codystar', cursive",
