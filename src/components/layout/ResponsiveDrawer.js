@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     appBar: {
-        backgroundColor: "#212121",
-        color: "#ff1744",
+        backgroundColor: "#05386B",
+        color: "#5CDB95;",
         [theme.breakpoints.up('sm')]: {
             width: `calc(100% - ${drawerWidth}px)`,
             marginLeft: drawerWidth,
@@ -46,22 +46,21 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     toolbar: theme.mixins.toolbar,
     drawerPaper: {
-        // backgroundColor: "#c62828",
-        backgroundColor: "#212121",
-        color: "#eeeeee",
+        backgroundColor: "#05386B",
+        color: "#EDF5E1",
         width: drawerWidth,
     },
     content: {
-        // backgroundColor: "#616161",
+        backgroundColor: "#5CDB95",
         // backgroundImage: "url(https://images.pexels.com/photos/333850/pexels-photo-333850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)",
-        // height: "100vh",
-        color: "#eeeeee",
+        height: "100vh",
+        color: "#05386B",
         flexGrow: 1,
         padding: theme.spacing(3),
     },
     icons: {
         // color: "#212121",
-        color: "#ff1744",
+        color: "#5CDB95;",
     },
     text: {
         // fontFamily: "'Codystar', cursive",
@@ -72,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "2rem"
     },
     divider: {
-        backgroundColor: "#616161"
+        backgroundColor: "#EDF5E1"
     }
 }));
 
