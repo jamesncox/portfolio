@@ -63,7 +63,8 @@ const useStyles = makeStyles((theme) => ({
         color: "#5CDB95;",
     },
     text: {
-        // fontFamily: "'Codystar', cursive",
+        fontFamily: "'Varta', sans-serif",
+        fontSize: "1.2rem"
     },
     header: {
         fontFamily: "'Codystar', cursive",
@@ -164,27 +165,24 @@ function ResponsiveDrawer(props) {
             <main className={classes.content}>
                 <div className={classes.toolbar} />
                 <Typography paragraph className={classes.text}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-                    facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-                    gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-                    donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-                    adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-                    Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-                    imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-                    arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-                    donec massa sapien faucibus et molestie ac.
+                    Hi, I'm James and I am many things.
+                    A dad. A husband. A musician. An athlete. An artist.
+                    And now a developer. My two biggest passions in life are music and soccer.
+                    Coding combines everything I love about soccer and music:
+                    creativity, self-expression, team work, challenging yourself, and so much more.
                 </Typography>
-                <Typography paragraph>
-                    Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-                    facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-                    tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-                    consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-                    vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-                    hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-                    tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-                    nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-                    accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
+                <Typography paragraph className={classes.text}>
+                    I have experience in Ruby on Rails and JavaScript based programming
+                    with a background in restaurant management,
+                    integrating skills in problem-solving, team-management, multitasking,
+                    achieving results under intense pressure,
+                    customer service, conflict resolution, and communication with others.
+                    If you are looking for someone who genuinely loves programming,
+                    excels working together in a team, embraces learning new skills and
+                    pushes their self to grow every day, look no further!
+                    Please enjoy viewing my projects and feel free to contact me anytime
+                    f you believe I would be a great fit for your team or if you have any questions.
+                    Thank you for visiting my website and have a wonderful day.
                 </Typography>
             </main>
         </div>
