@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import SideNavBar from './components/layout/SideNavBar'
+import Home from './components/layout/Home'
 
 function App() {
   return (
     <div className="App">
-      <SideNavBar />
+      <Home />
     </div>
   );
 }
