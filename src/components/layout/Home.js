@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from './Title'
 import SideNavBar from './SideNavBar'
+import Welcome from './Welcome'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -21,6 +22,7 @@ export default function Home(props) {
         <div className={classes.root}>
             <SideNavBar />
             <Title />
+            <Welcome />
         </div>
     )
 }
