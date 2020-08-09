@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         fontSize: "3rem",
         fontWeight: "bold",
-        fontFamily: "'Codystar', cursive",
+        fontFamily: "'Bungee Inline', cursive",
         marginTop: "-4rem",
         color: "#f50057",
         [theme.breakpoints.down('sm')]: {
