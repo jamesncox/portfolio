@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
@@ -10,7 +10,10 @@ const useStyles = makeStyles((theme) => ({
     text: {
         fontFamily: "'Jura', sans-serif",
         fontSize: "2rem",
-        color: "#f50057"
+        color: "#f50057",
+        [theme.breakpoints.down('md')]: {
+            fontSize: "1.5rem",
+        }
     },
     closeButton: {
         position: "absolute",
@@ -18,18 +21,41 @@ const useStyles = makeStyles((theme) => ({
         right: "0",
         fontSize: "3rem",
         color: "#9e9e9e",
-        "&:hover": {
-            color: "#f50057"
-        }
+        // "&:hover": {
+        //     color: "#f50057"
+        // }
+    },
+    openButton: {
+        fontSize: "30px",
+        cursor: "pointer",
+        // "&:hover": {
+        //     color: "#f50057"
+        // }
     }
 }));
 
 function SideNavBar(props) {
     const classes = useStyles()
     const navRef = useRef()
+    const [width, setWidth] = useState(window.innerWidth)
+    const smallBreakpoint = 600
+    const largeBreakPoint = 960
+
+    useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize)
+
+        return () => window.removeEventListener("resize", handleWindowResize)
+    }, [])
 
     function openNav() {
-        navRef.current.style.width = "100%"
+        if (width <= smallBreakpoint) {
+            navRef.current.style.width = "100%"
+        } else if (width > smallBreakpoint && width <= largeBreakPoint) {
+            navRef.current.style.width = "33%"
+        } else {
+            navRef.current.style.width = "25%"
+        }
     }
 
     function closeNav() {
@@ -41,20 +67,20 @@ function SideNavBar(props) {
             <div id="mySidenav" className="sidenav" ref={navRef}>
                 <Button className={classes.closeButton} onClick={() => closeNav()}>&times;</Button>
                 <Grid item xs={12}>
-                    <Button className={classes.text}>About</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}>About</Button>
                 </Grid>
                 <Grid item xs={12}>
-                    <Button className={classes.text}>Projects</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}>Projects</Button>
                 </Grid>
                 <Grid item xs={12}>
-                    <Button className={classes.text}>Work</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}>Work</Button>
                 </Grid>
                 <Grid item xs={12}>
-                    <Button className={classes.text}>Education</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}>Education</Button>
                 </Grid>
             </div>
             <div>
-                <Button style={{ fontSize: "30px", cursor: "pointer" }} onClick={() => openNav()}>&#9776; </Button>
+                <Button className={classes.openButton} onClick={() => openNav()}>&#9776; </Button>
             </div>
         </div>
     )
