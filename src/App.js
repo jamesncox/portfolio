@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ResponsiveDrawer from './components/layout/ResponsiveDrawer'
+import SideNavBar from './components/layout/SideNavBar'
 
 function App() {
   return (
     <div className="App">
-      <ResponsiveDrawer />
+      <SideNavBar />
     </div>
   );
 }
