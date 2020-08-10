@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Jura', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
+        [theme.breakpoints.down('xs')]: {
+            fontSize: ".8rem"
+        },
     },
     card: {
         alignSelf: "center",
@@ -34,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(2),
         width: theme.spacing(12),
         height: theme.spacing(12),
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
             width: theme.spacing(8),
             height: theme.spacing(8),
         },

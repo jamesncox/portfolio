@@ -18,18 +18,21 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Jura', sans-serif",
         color: "#212121",
         fontSize: "1rem",
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down('sm')]: {
             fontSize: ".8rem"
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: ".75rem"
+            fontSize: ".7rem"
         },
     },
     card: {
         alignSelf: "center",
         margin: theme.spacing(2),
         maxWidth: 450,
-        backgroundColor: "#eeeeee"
+        backgroundColor: "#eeeeee",
+        // [theme.breakpoints.down('sm')]: {
+        //     width: 350
+        // },
     },
 }));
 
