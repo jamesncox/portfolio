@@ -25,7 +25,7 @@ export default function Header(props) {
 
     return (
         <Typography className={classes.title}>
-            ABOUT ME
+            ABOUT JAMES
         </Typography>
     )
 
