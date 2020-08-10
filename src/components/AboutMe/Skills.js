@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: "center",
         fontFamily: "'Jura', sans-serif",
         color: "#212121",
-        fontSize: "1.1rem",
+        fontSize: "1rem",
         [theme.breakpoints.down('md')]: {
             fontSize: ".8rem"
         },
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     card: {
         alignSelf: "center",
         margin: theme.spacing(2),
-        maxWidth: 400,
+        maxWidth: 425,
         backgroundColor: "#eeeeee"
     },
     large: {
