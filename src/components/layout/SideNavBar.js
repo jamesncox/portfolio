@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef } from 'react'
 import { Link as RouterLink } from 'react-router-dom';
 
 import Button from '@material-ui/core/Button'
@@ -45,25 +45,27 @@ const useStyles = makeStyles((theme) => ({
 function SideNavBar(props) {
     const classes = useStyles()
     const navRef = useRef()
-    const [width, setWidth] = useState(window.innerWidth)
-    const smallBreakpoint = 600
-    const largeBreakPoint = 960
+    // const [width, setWidth] = useState(window.innerWidth)
+    // const smallBreakpoint = 600
+    // const largeBreakPoint = 960
 
-    useEffect(() => {
-        const handleWindowResize = () => setWidth(window.innerWidth)
-        window.addEventListener("resize", handleWindowResize)
+    // useEffect(() => {
+    //     const handleWindowResize = () => setWidth(window.innerWidth)
+    //     window.addEventListener("resize", handleWindowResize)
 
-        return () => window.removeEventListener("resize", handleWindowResize)
-    }, [])
+    //     return () => window.removeEventListener("resize", handleWindowResize)
+    // }, [])
 
     function openNav() {
-        if (width <= smallBreakpoint) {
-            navRef.current.style.width = "100%"
-        } else if (width > smallBreakpoint && width <= largeBreakPoint) {
-            navRef.current.style.width = "33%"
-        } else {
-            navRef.current.style.width = "25%"
-        }
+        navRef.current.style.width = "100%"
+
+        // if (width <= smallBreakpoint) {
+        //     navRef.current.style.width = "100%"
+        // } else if (width > smallBreakpoint && width <= largeBreakPoint) {
+        //     navRef.current.style.width = "33%"
+        // } else {
+        //     navRef.current.style.width = "25%"
+        // }
     }
 
     function closeNav() {

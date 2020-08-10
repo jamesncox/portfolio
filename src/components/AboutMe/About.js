@@ -1,7 +1,6 @@
 import React from 'react'
 import JamesSanDiego from '../../assets/images/james san diego.jpg'
 import Header from './Header'
-import SlowDiagonals from '../layout/SlowDiagonals'
 import SkillsHeader from './SkillsHeader'
 import Skills from './Skills'
 import DesiredRoleHeader from './DesiredRoleHeader'
@@ -21,7 +20,6 @@ const useStyles = makeStyles((theme) => ({
         height: "auto",
     },
     text: {
-        // textAlign: "center",
         fontFamily: "'Jura', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
@@ -48,7 +46,6 @@ export default function About(props) {
     const classes = useStyles()
     return (
         <>
-            <SlowDiagonals />
             <Header />
             <Card className={classes.card}>
                 <CardContent>

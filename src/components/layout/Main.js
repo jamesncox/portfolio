@@ -7,6 +7,9 @@ import {
 import SideNavBar from './SideNavBar'
 import Home from './Home'
 import About from '../AboutMe/About'
+import Projects from '../Projects/Projects'
+import Diagonals from './Diagonals'
+import SlowDiagonals from './SlowDiagonals'
 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -25,6 +28,8 @@ export default function Main(props) {
     return (
         <Router>
             <div className={classes.root}>
+                <Diagonals />
+                <SlowDiagonals />
                 <SideNavBar />
                 <Switch>
                     <Route exact path="/">
@@ -32,6 +37,9 @@ export default function Main(props) {
                     </Route>
                     <Route exact path="/about">
                         <About />
+                    </Route>
+                    <Route exact path="/projects">
+                        <Projects />
                     </Route>
                 </Switch>
             </div>
