@@ -78,10 +78,7 @@ function SideNavBar(props) {
                     <Button className={classes.text} onClick={() => closeNav()}>Projects</Button>
                 </Grid>
                 <Grid item xs={12}>
-                    <Button className={classes.text} onClick={() => closeNav()}>Work</Button>
-                </Grid>
-                <Grid item xs={12}>
-                    <Button className={classes.text} onClick={() => closeNav()}>Education</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}>Contact</Button>
                 </Grid>
             </div>
             <div>
