@@ -65,7 +65,12 @@ function SideNavBar(props) {
     return (
         <div className={classes.root}>
             <div id="mySidenav" className="sidenav" ref={navRef}>
-                <Button className={classes.closeButton} onClick={() => closeNav()}>&times;</Button>
+                <Button className={classes.closeButton} onClick={() => closeNav()}>
+                    &times;
+                </Button>
+                <Grid item xs={12}>
+                    <Button className={classes.text} onClick={() => closeNav()}>Home</Button>
+                </Grid>
                 <Grid item xs={12}>
                     <Button className={classes.text} onClick={() => closeNav()}>About</Button>
                 </Grid>
