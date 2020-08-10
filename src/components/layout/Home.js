@@ -10,12 +10,9 @@ const useStyles = makeStyles((theme) => ({
     box: {
         alignSelf: "center",
         marginTop: theme.spacing(2),
-        maxWidth: "100%",
         height: "auto",
-        // clipPath: "polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%)"
     },
     image: {
-        // marginTop: theme.spacing(2),
         height: 500,
         border: "solid 10px #212121",
         borderRadius: "1.5rem",
@@ -23,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
             height: 450
         },
         [theme.breakpoints.down('xs')]: {
-            height: 400
+            height: 350
         }
     },
     text: {
@@ -51,10 +48,10 @@ export default function Home(props) {
             <Title />
             <Box className={classes.box}>
                 <img className={classes.image} src={EllieAndJames} alt="Ellie and James" />
-                <Typography className={classes.text}>
-                    Hi. I'm James and I make things.
-            </Typography>
             </Box>
+            <Typography className={classes.text}>
+                Hi. I'm James and I make websites.
+            </Typography>
         </>
     )
 }
