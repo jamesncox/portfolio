@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
+import { Link as RouterLink } from 'react-router-dom';
 
 import Diagonals from './Diagonals'
 
@@ -85,11 +86,46 @@ function SideNavBar(props) {
                     &times;
                 </Button>
                 <Grid container={true} direction="column" alignContent="center" alignItems="flex-start" item xs={12}>
-                    <Button className={classes.text} onClick={() => closeNav()}><HomeIcon className={classes.icons} />Home</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}><PersonIcon className={classes.icons} />About</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}><WorkIcon className={classes.icons} />Projects</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}><SchoolIcon className={classes.icons} />Education</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}><MailIcon className={classes.icons} />Contact</Button>
+                    <Button
+                        className={classes.text}
+                        onClick={() => closeNav()}
+                        component={RouterLink}
+                        to="/"
+                    >
+                        <HomeIcon className={classes.icons} /> Home
+                    </Button>
+                    <Button
+                        className={classes.text}
+                        onClick={() => closeNav()}
+                        component={RouterLink}
+                        to="/about"
+                    >
+                        <PersonIcon className={classes.icons} /> About
+                    </Button>
+                    <Button
+                        className={classes.text}
+                        onClick={() => closeNav()}
+                        component={RouterLink}
+                        to="/projects"
+                    >
+                        <WorkIcon className={classes.icons} /> Projects
+                    </Button>
+                    <Button
+                        className={classes.text}
+                        onClick={() => closeNav()}
+                        component={RouterLink}
+                        to="/education"
+                    >
+                        <SchoolIcon className={classes.icons} /> Education
+                    </Button>
+                    <Button
+                        className={classes.text}
+                        onClick={() => closeNav()}
+                        component={RouterLink}
+                        to="/contact"
+                    >
+                        <MailIcon className={classes.icons} /> Contact
+                    </Button>
                 </Grid>
             </div>
             <div>
