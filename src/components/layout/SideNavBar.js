@@ -7,7 +7,11 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
     },
+    grid: {
+        textAlign: "flex-start",
+    },
     text: {
+        marginLeft: theme.spacing(4),
         fontFamily: "'Jura', sans-serif",
         fontSize: "2rem",
         color: "#f50057",
@@ -68,16 +72,11 @@ function SideNavBar(props) {
                 <Button className={classes.closeButton} onClick={() => closeNav()}>
                     &times;
                 </Button>
-                <Grid item xs={12}>
+                <Grid container={true} direction="column" alignItems="flex-start" item xs={12}>
                     <Button className={classes.text} onClick={() => closeNav()}>Home</Button>
-                </Grid>
-                <Grid item xs={12}>
                     <Button className={classes.text} onClick={() => closeNav()}>About</Button>
-                </Grid>
-                <Grid item xs={12}>
                     <Button className={classes.text} onClick={() => closeNav()}>Projects</Button>
-                </Grid>
-                <Grid item xs={12}>
+                    <Button className={classes.text} onClick={() => closeNav()}>Education</Button>
                     <Button className={classes.text} onClick={() => closeNav()}>Contact</Button>
                 </Grid>
             </div>
