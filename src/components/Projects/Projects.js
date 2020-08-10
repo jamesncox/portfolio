@@ -1,11 +1,12 @@
 import React from 'react'
 import ProjectsHeader from './ProjectsHeader'
-import ProjectData from '../../data/projects.json'
+import ProjectCards from './ProjectCards'
 
 export default function Projects() {
     return (
         <>
             <ProjectsHeader />
+            <ProjectCards />
         </>
     )
 }

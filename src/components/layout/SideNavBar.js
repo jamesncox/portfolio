@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
     openButton: {
         fontSize: "30px",
         cursor: "pointer",
+        // position: "fixed"
     }
 }));
 

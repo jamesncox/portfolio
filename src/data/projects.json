@@ -2,7 +2,9 @@
     {
         "id": 1,
         "name": "GIF FIT",
-        "image": "../../assets/images/gif fit dumbbells collage.png",
+        "image": "gif fit dumbbells collage.png",
+        "github": "",
+        "url": "",
         "summary": "Home workouts made easy!",
         "description": "Gif Fit builds randomized workouts for you that you can do without any equipment in your home. Select how many exercises you want to perform, how long each one lasts, the rest period in between and total number of rounds. Gif Fit will keep track of each move for you and let you know when to rest and prepare for the next exercise. Features a React front-end, Redux to manage state, and Material UI for styling. Gifs are sourced from Giphy.com (special thanks and credit to 8fit for uploading so many awesome exercises). Made with love to genuinely help others during these stressful and challenging times.",
         "technologies": [
@@ -15,7 +17,9 @@
     {
         "id": 2,
         "name": "Do Did Done",
-        "image": "../../assets/images/do did done collage.jpg",
+        "image": "do did done collage.jpg",
+        "github": "",
+        "url": "",
         "summary": "Keep track of your todos by category",
         "description": "Do Did Done allows a user to create an account and select several categories to manage their tasks. Do Did Done is made with a React frontend and a Rails API backend. The React frontend features Material UI components, React router, Redux and local state management, functional components and React hooks and a thoughtful design for improved UI and UX. The frontend consumes the Rails API with full CRUD functionality. The Rails API backend is hosted on Heroku and features a PostgreSQL database. It handles sessions, cookies, CRUD functionality, separation of concerns and MVC structure.",
         "technologies": [
@@ -28,7 +32,9 @@
     {
         "id": 3,
         "name": "Buy / Where",
-        "image": "../../assets/images/buy where collage.png",
+        "image": "buy where collage.png",
+        "github": "",
+        "url": "",
         "summary": "Track your spending at stores you love",
         "description": "Want to keep track of what you purchase at the stores and retailers you love to shop at? Buy / Where helps you do that! Featuring a React frontend that showcases Redux for state management, functional components that make use of modern hooks, and thoughtful use of reusable components. Designed with the Material UI library almost exclusively, delivering a clean aesthetic, responsiveness on all devices and improved accessibility. Data is managed by a Rails API backend hosted on Heroku, that handles model relationships and keeps the data logic separate from the front end.",
         "technologies": [

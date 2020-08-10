@@ -41,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-
 export default function About(props) {
     const classes = useStyles()
     return (
