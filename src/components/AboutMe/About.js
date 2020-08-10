@@ -1,13 +1,13 @@
 import React from 'react'
 import JamesSanDiego from '../../assets/images/james san diego.jpg'
 import Header from './Header'
-import SlowDiagonals from './SlowDiagonals'
+import SlowDiagonals from '../layout/SlowDiagonals'
 
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Avatar from '@material-ui/core/Avatar';
+import Typography from '@material-ui/core/Typography'
+import { makeStyles } from '@material-ui/core/styles'
+import Card from '@material-ui/core/Card'
+import CardContent from '@material-ui/core/CardContent'
+import Avatar from '@material-ui/core/Avatar'
 
 const useStyles = makeStyles((theme) => ({
     box: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         // textAlign: "center",
         fontFamily: "'Jura', sans-serif",
         color: "#212121",
-        fontSize: "1.2rem",
+        fontSize: "1.1rem",
     },
     card: {
         alignSelf: "center",
@@ -30,8 +30,12 @@ const useStyles = makeStyles((theme) => ({
     },
     large: {
         marginTop: theme.spacing(2),
-        width: theme.spacing(10),
-        height: theme.spacing(10),
+        width: theme.spacing(12),
+        height: theme.spacing(12),
+        [theme.breakpoints.down('sm')]: {
+            width: theme.spacing(8),
+            height: theme.spacing(8),
+        },
     },
 }));
 
