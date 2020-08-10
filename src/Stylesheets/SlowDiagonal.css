@@ -1,0 +1,37 @@
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .background1 {
+    animation:slide 24s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #eeeeee 50%, #00c2b8 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .background2 {
+    animation-direction:alternate-reverse;
+    animation-duration:32s;
+  }
+  
+  .background3 {
+    animation-duration:40s;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }

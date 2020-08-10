@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import EllieAndJames from '../../assets/images/ellie and james.jpg'
 import Title from './Title'
+import Diagonals from './Diagonals'
 
 const useStyles = makeStyles((theme) => ({
     box: {
@@ -46,6 +47,7 @@ export default function Home(props) {
     const classes = useStyles()
     return (
         <>
+            <Diagonals />
             <Title />
             <Box className={classes.box}>
                 <img className={classes.image} src={EllieAndJames} alt="Ellie and James" />

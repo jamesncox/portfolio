@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Diagonal.css'
+import '../../Stylesheets/Diagonal.css'
 
 export default function Diagonals() {
     return (
