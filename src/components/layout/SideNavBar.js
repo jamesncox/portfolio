@@ -1,4 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
+
+import Diagonals from './Diagonals'
+
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
@@ -76,6 +79,7 @@ function SideNavBar(props) {
 
     return (
         <div className={classes.root}>
+            <Diagonals />
             <div id="mySidenav" className="sidenav" ref={navRef}>
                 <Button className={classes.closeButton} onClick={() => closeNav()}>
                     &times;
