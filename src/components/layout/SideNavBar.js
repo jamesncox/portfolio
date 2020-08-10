@@ -35,16 +35,10 @@ const useStyles = makeStyles((theme) => ({
         right: "0",
         fontSize: "3rem",
         color: "#9e9e9e",
-        // "&:hover": {
-        //     color: "#f50057"
-        // }
     },
     openButton: {
         fontSize: "30px",
         cursor: "pointer",
-        // "&:hover": {
-        //     color: "#f50057"
-        // }
     }
 }));
 
