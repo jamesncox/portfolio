@@ -1,17 +1,25 @@
 import React, { useRef, useEffect, useState } from 'react'
 import Button from '@material-ui/core/Button'
-import { makeStyles } from '@material-ui/core/styles';
-import Grid from '@material-ui/core/Grid';
+import { makeStyles } from '@material-ui/core/styles'
+import Grid from '@material-ui/core/Grid'
+import HomeIcon from '@material-ui/icons/Home'
+import PersonIcon from '@material-ui/icons/Person'
+import WorkIcon from '@material-ui/icons/Work'
+import SchoolIcon from '@material-ui/icons/School'
+import MailIcon from '@material-ui/icons/Mail'
 
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
     },
-    grid: {
-        textAlign: "flex-start",
+    icons: {
+        marginRight: theme.spacing(2),
+        fontSize: "2rem",
+        [theme.breakpoints.down('md')]: {
+            fontSize: "1.5rem",
+        }
     },
     text: {
-        marginLeft: theme.spacing(4),
         fontFamily: "'Jura', sans-serif",
         fontSize: "2rem",
         color: "#f50057",
@@ -72,12 +80,12 @@ function SideNavBar(props) {
                 <Button className={classes.closeButton} onClick={() => closeNav()}>
                     &times;
                 </Button>
-                <Grid container={true} direction="column" alignItems="flex-start" item xs={12}>
-                    <Button className={classes.text} onClick={() => closeNav()}>Home</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}>About</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}>Projects</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}>Education</Button>
-                    <Button className={classes.text} onClick={() => closeNav()}>Contact</Button>
+                <Grid container={true} direction="column" alignContent="center" alignItems="flex-start" item xs={12}>
+                    <Button className={classes.text} onClick={() => closeNav()}><HomeIcon className={classes.icons} />Home</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}><PersonIcon className={classes.icons} />About</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}><WorkIcon className={classes.icons} />Projects</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}><SchoolIcon className={classes.icons} />Education</Button>
+                    <Button className={classes.text} onClick={() => closeNav()}><MailIcon className={classes.icons} />Contact</Button>
                 </Grid>
             </div>
             <div>
