@@ -2,6 +2,7 @@ import React from 'react'
 import JamesSanDiego from '../../assets/images/james san diego.jpg'
 import Header from './Header'
 import SlowDiagonals from '../layout/SlowDiagonals'
+import SkillsHeader from './SkillsHeader'
 
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
@@ -81,6 +82,7 @@ export default function About(props) {
                     </Typography>
                 </CardContent>
             </Card>
+            <SkillsHeader />
         </>
     )
 }
