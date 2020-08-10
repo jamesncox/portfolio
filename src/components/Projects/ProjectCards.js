@@ -21,7 +21,10 @@ const useStyles = makeStyles((theme) => ({
         width: 600,
         alignSelf: "center",
         marginTop: theme.spacing(2),
-        marginBottom: theme.spacing(2)
+        marginBottom: theme.spacing(2),
+        [theme.breakpoints.down('sm')]: {
+            maxWidth: "92%",
+        },
     },
     media: {
         height: 0,
