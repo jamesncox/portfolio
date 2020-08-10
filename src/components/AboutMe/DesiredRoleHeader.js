@@ -19,12 +19,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function SkillsHeader(props) {
+export default function DesiredRoleHeader(props) {
     const classes = useStyles();
 
     return (
         <Typography className={classes.title}>
-            SKILLS
+            DESIRED ROLE
         </Typography>
     )
 

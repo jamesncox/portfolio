@@ -4,6 +4,8 @@ import Header from './Header'
 import SlowDiagonals from '../layout/SlowDiagonals'
 import SkillsHeader from './SkillsHeader'
 import Skills from './Skills'
+import DesiredRoleHeader from './DesiredRoleHeader'
+import DesiredRole from './DesiredRole'
 
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
@@ -59,30 +61,17 @@ export default function About(props) {
                 </CardContent>
                 <CardContent>
                     <Typography className={classes.text}>
-                        I am looking for front-end, back-end or full-stack positions featuring some or all of the following: React, Redux, JavaScript, Ruby on Rails, CSS, HTML, Github, PostgreSQL, Material UI and any related technologies.
+                        Besides programming, my biggest passions in life are music and soccer. Coding combines everything I love about soccer and music: creativity, self-expression, team work, challenging yourself, and so much more.
                     </Typography>
                 </CardContent>
                 <CardContent>
                     <Typography className={classes.text}>
-                        Besides coding, my two biggest passions in life are music and soccer. Coding combines everything I love about soccer and music: creativity, self-expression, team work, challenging yourself, and so much more.
-                    </Typography>
-                </CardContent>
-                <CardContent>
-                    <Typography className={classes.text}>
-                        I have experience in Ruby on Rails and JavaScript based programming with a background in restaurant management, integrating skills in problem-solving, team-management, multitasking, achieving results under intense pressure, customer service, conflict resolution, and communication with others.
-                    </Typography>
-                </CardContent>
-                <CardContent>
-                    <Typography className={classes.text}>
-                        If you are looking for someone who genuinely loves programming, excels working together in a team, embraces learning new skills and pushes their self to grow every day, look no further!
-                    </Typography>
-                </CardContent>
-                <CardContent>
-                    <Typography className={classes.text}>
-                        Please enjoy viewing my projects and feel free to contact me anytime if you believe I would be a great fit for your team or if you have any questions. Thank you for visiting my website and have a wonderful day.
+                        Please enjoy viewing my projects and feel free to contact me anytime if you believe I would be a great fit for your team or if you have any questions. Thank you for visiting my website and have a wonderful day!
                     </Typography>
                 </CardContent>
             </Card>
+            <DesiredRoleHeader />
+            <DesiredRole />
             <SkillsHeader />
             <Skills />
         </>

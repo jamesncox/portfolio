@@ -5,16 +5,16 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     title: {
         alignSelf: "center",
-        fontSize: "3rem",
+        fontSize: "2rem",
         fontWeight: "bold",
         fontFamily: "'Bungee Inline', cursive",
         color: "#f50057",
         [theme.breakpoints.down('sm')]: {
-            fontSize: "2.5rem",
+            fontSize: "1.75rem",
             marginTop: theme.spacing(1)
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "2rem",
+            fontSize: "1.5rem",
             marginTop: theme.spacing(2)
         }
     },

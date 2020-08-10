@@ -28,17 +28,8 @@ const useStyles = makeStyles((theme) => ({
     card: {
         alignSelf: "center",
         margin: theme.spacing(2),
-        maxWidth: 425,
+        maxWidth: 450,
         backgroundColor: "#eeeeee"
-    },
-    large: {
-        marginTop: theme.spacing(2),
-        width: theme.spacing(12),
-        height: theme.spacing(12),
-        [theme.breakpoints.down('sm')]: {
-            width: theme.spacing(8),
-            height: theme.spacing(8),
-        },
     },
 }));
 
