@@ -7,7 +7,7 @@ import EllieAndJames from '../../assets/images/ellie and james.jpg'
 const useStyles = makeStyles((theme) => ({
     box: {
         alignSelf: "center",
-        marginTop: theme.spacing(4),
+        marginTop: theme.spacing(2),
         maxWidth: "100%",
         height: "auto",
         // clipPath: "polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%)"
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     text: {
+        marginTop: theme.spacing(2),
         alignSelf: "center",
         textAlign: "center",
         fontFamily: "'Jura', sans-serif",

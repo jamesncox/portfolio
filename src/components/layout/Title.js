@@ -8,15 +8,14 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "3rem",
         fontWeight: "bold",
         fontFamily: "'Bungee Inline', cursive",
-        marginTop: "-4rem",
         color: "#f50057",
         [theme.breakpoints.down('sm')]: {
             fontSize: "2.5rem",
-            marginTop: "-3.75rem"
+            marginTop: theme.spacing(1)
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: "2rem",
-            marginTop: "-3.5rem"
+            marginTop: theme.spacing(2)
         }
     },
 }));
