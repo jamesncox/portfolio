@@ -3,7 +3,6 @@ import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import EllieAndJames from '../../assets/images/ellie and james.jpg'
-import '../../Shapes.css'
 
 const useStyles = makeStyles((theme) => ({
     box: {
@@ -48,21 +47,6 @@ export default function Welcome(props) {
             <Typography className={classes.text}>
                 Hi. I'm James and I make things.
             </Typography>
-            <div className="area" >
-                <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div >
         </Box>
     )
 }
