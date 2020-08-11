@@ -27,7 +27,7 @@ export default function Contact() {
             <ContactHeader />
             <Paper className={classes.paper}>
                 <Typography className={classes.text}>
-                    This is where I will put an email
+                    This is where I will put an email contact form
                 </Typography>
             </Paper>
             <SocialHeader />
