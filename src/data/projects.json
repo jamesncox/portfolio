@@ -18,8 +18,8 @@
         "id": 2,
         "name": "Do Did Done",
         "image": "do did done collage.jpg",
-        "github": "",
-        "url": "",
+        "github": "https://github.com/jamesncox/do-did-done-react",
+        "url": "https://do-did-done.netlify.app/",
         "summary": "Keep track of your todos by category",
         "description": "Do Did Done allows a user to create an account and select several categories to manage their tasks. Do Did Done is made with a React frontend and a Rails API backend. The React frontend features Material UI components, React router, Redux and local state management, functional components and React hooks and a thoughtful design for improved UI and UX. The frontend consumes the Rails API with full CRUD functionality. The Rails API backend is hosted on Heroku and features a PostgreSQL database. It handles sessions, cookies, CRUD functionality, separation of concerns and MVC structure.",
         "technologies": [
