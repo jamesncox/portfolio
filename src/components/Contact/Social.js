@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: ".8rem"
         },
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('xs')]: {
             fontSize: ".7rem"
         },
     },
@@ -37,14 +37,26 @@ const useStyles = makeStyles((theme) => ({
     },
     github: {
         fontSize: "4rem",
+        marginBottom: "-1rem",
+        [theme.breakpoints.down('sm')]: {
+            fontSize: "2.5rem"
+        },
     },
     linkedIn: {
         fontSize: "4.5rem",
-        color: "#0e76a8"
+        color: "#0e76a8",
+        marginBottom: "-1rem",
+        [theme.breakpoints.down('sm')]: {
+            fontSize: "3rem"
+        },
     },
     twitter: {
         color: "#00acee",
-        fontSize: "4.5rem"
+        fontSize: "4.5rem",
+        marginBottom: "-1rem",
+        [theme.breakpoints.down('sm')]: {
+            fontSize: "3rem"
+        },
     }
 }))
 
