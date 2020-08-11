@@ -46,10 +46,10 @@ const useStyles = makeStyles((theme) => ({
     },
     technologies: {
         marginTop: theme.spacing(2),
-        fontFamily: "'Jura', sans-serif",
+        fontFamily: "'Varta', sans-serif",
     },
     header: {
-        fontFamily: "'Jura', sans-serif",
+        fontFamily: "'Varta', sans-serif",
         fontWeight: "bold",
         fontSize: "1.25rem",
         marginBottom: "-1.5rem"

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
         height: "auto",
     },
     text: {
-        fontFamily: "'Jura', sans-serif",
+        fontFamily: "'Varta', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
         [theme.breakpoints.down('xs')]: {
