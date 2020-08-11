@@ -16,7 +16,7 @@
     },
     {
         "id": 2,
-        "name": "Do Did Done",
+        "name": "DO DID DONE",
         "image": "do did done collage.jpg",
         "github": "https://github.com/jamesncox/do-did-done-react",
         "url": "https://do-did-done.netlify.app/",
@@ -31,7 +31,7 @@
     },
     {
         "id": 3,
-        "name": "Buy / Where",
+        "name": "BUY / WHERE",
         "image": "buy where collage.png",
         "github": "https://github.com/jamesncox/what-where-react",
         "url": "https://buy-where.netlify.app/",
@@ -46,7 +46,7 @@
     },
     {
         "id": 4,
-        "name": "Memes vs Gifs",
+        "name": "MEMES VS GIFS",
         "image": "mvg new ss.jpg",
         "summary": "(Desktop only) A meme and gif generator",
         "description": "This app is my take on a meme or gif generator. A user can either sign up or log in if they already have an account, afterwhich they are given their own profile. A user can create combinations of their favorite randomly-generated memes or gifs and captions. The created meme or gif and caption combo is saved to the database and displayed in the user's profile page, as well as the designated meme or gif show page for everyone's memes and gifs. Gifs are provided by Giphy.com. A user can also create their own caption, which gets saved to the database, and that caption is available for selection by anyone. Captions can be sorted by ratings, NSFW, PG or viewing all ratings simultaneously. A created caption must be given a rating to persist to the database. This app utilizes a Rails API back-end with a postgreSQL database, as well as a React.js front-end.",
@@ -61,7 +61,7 @@
     },
     {
         "id": 5,
-        "name": "Math Master",
+        "name": "MATH MASTER",
         "image": "new math master ss.jpg",
         "summary": "Math app for elementary students",
         "description": "Math Master is a React single page application built for my daughter, Ellie. It generates random addition, subtraction, multiplication and division equations. It features a points system for correct or incorrect answers. Featuring responsive CSS media queries, managing state with Redux, and separation of concerns with container and presentational components.",
@@ -76,7 +76,7 @@
     },
     {
         "id": 6,
-        "name": "Kidtionary",
+        "name": "KIDTIONARY",
         "image": "kidtionary large ss.jpg",
         "summary": "Dictionary designed for young readers",
         "description": "Kidtionary features a React front end, state managed by Redux, responsive design for all devices and logic to handle errors, misspelling, blank fields and un-recognized queries.",
