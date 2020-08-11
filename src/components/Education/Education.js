@@ -1,10 +1,5 @@
 import React from 'react'
-import JamesSanDiego from '../../assets/images/james san diego.jpg'
-import Header from './Header'
-import SkillsHeader from './SkillsHeader'
-import Skills from './Skills'
-import DesiredRoleHeader from './DesiredRoleHeader'
-import DesiredRole from './DesiredRole'
+import EducationHeader from './EducationHeader'
 
 import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
@@ -38,15 +33,17 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function About(props) {
+export default function Education() {
     const classes = useStyles()
+
     return (
         <>
-            <Header />
+            <EducationHeader />
+
             <Card className={classes.card}>
-                <CardContent>
-                    <Avatar src={JamesSanDiego} alt="James at the San Diego Zoo" className={classes.large} />
-                </CardContent>
+                {/* <CardContent>
+                    <Avatar src={} alt="James at the San Diego Zoo" className={classes.large} />
+                </CardContent> */}
                 <CardContent>
                     <Typography className={classes.text}>
                         I am many things. A dad. A husband. A musician. An athlete. An artist. And now a developer.
@@ -63,10 +60,27 @@ export default function About(props) {
                     </Typography>
                 </CardContent>
             </Card>
-            <DesiredRoleHeader />
-            <DesiredRole />
-            <SkillsHeader />
-            <Skills />
+
+            <Card className={classes.card}>
+                {/* <CardContent>
+                    <Avatar src={} alt="James at the San Diego Zoo" className={classes.large} />
+                </CardContent> */}
+                <CardContent>
+                    <Typography className={classes.text}>
+                        I am many things. A dad. A husband. A musician. An athlete. An artist. And now a developer.
+                    </Typography>
+                </CardContent>
+                <CardContent>
+                    <Typography className={classes.text}>
+                        Besides programming, my biggest passions in life are music and soccer. Coding combines everything I love about soccer and music: creativity, self-expression, team work, challenging yourself, and so much more.
+                    </Typography>
+                </CardContent>
+                <CardContent>
+                    <Typography className={classes.text}>
+                        Please enjoy viewing my projects and feel free to contact me anytime if you believe I would be a great fit for your team or if you have any questions. Thank you for visiting my website and have a wonderful day!
+                    </Typography>
+                </CardContent>
+            </Card>
         </>
     )
 }

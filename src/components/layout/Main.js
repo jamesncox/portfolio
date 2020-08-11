@@ -8,6 +8,7 @@ import SideNavBar from './SideNavBar'
 import Home from './Home'
 import About from '../AboutMe/About'
 import Projects from '../Projects/Projects'
+import Education from '../Education/Education'
 import Diagonals from './Diagonals'
 import SlowDiagonals from './SlowDiagonals'
 
@@ -40,6 +41,9 @@ export default function Main(props) {
                     </Route>
                     <Route exact path="/projects">
                         <Projects />
+                    </Route>
+                    <Route exact path="/education">
+                        <Education />
                     </Route>
                 </Switch>
             </div>
