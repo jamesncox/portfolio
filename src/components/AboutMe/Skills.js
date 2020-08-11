@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: 450,
         backgroundColor: "#eeeeee",
     },
-}));
+}))
 
 
 export default function Skills(props) {
