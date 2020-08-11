@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 import FormGroup from '@material-ui/core/FormGroup';
@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
     root: {
         alignSelf: "flex-start",
-        marginTop: theme.spacing(10),
+        marginTop: theme.spacing(20),
         marginLeft: theme.spacing(1)
     },
     text: {
@@ -35,13 +35,14 @@ const PinkSwitch = withStyles({
 
 export default function CustomizedSwitches() {
     const classes = useStyles()
+    const toggleRef = useRef()
 
     const [state, setState] = React.useState({
         checked: true,
     });
 
     const handleChange = (event) => {
-        setState({ ...state, [event.target.name]: event.target.checked });
+        setState({ ...state, [event.target.name]: event.target.checked })
     };
 
     return (
