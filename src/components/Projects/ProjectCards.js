@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProjectData from '../../data/projects.json'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -43,17 +43,17 @@ const useStyles = makeStyles((theme) => ({
     link: {
         margin: theme.spacing(1),
         fontSize: 0
-    }
+    },
 }));
 
 export default function ProjectCards() {
     const classes = useStyles();
-    const [expanded, setExpanded] = React.useState(false);
+    const [expanded, setExpanded] = useState(true);
     const img = require.context('../../assets/images/', true)
 
-    const handleExpandClick = () => {
-        setExpanded(!expanded);
-    };
+    const handleExpandClick = (id) => {
+        setExpanded(expanded === id ? false : id);
+    }
 
     return (
         ProjectData.map(project => {
@@ -68,11 +68,6 @@ export default function ProjectCards() {
                         image={img(`./${project.image}`)}
                         title={project.name}
                     />
-                    {/* <CardContent>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    {project.summary}
-                </Typography>
-            </CardContent> */}
                     <CardActions disableSpacing>
                         <IconButton aria-label="link to Github repository">
                             <Link
@@ -102,14 +97,14 @@ export default function ProjectCards() {
                             className={clsx(classes.expand, {
                                 [classes.expandOpen]: expanded,
                             })}
-                            onClick={handleExpandClick}
-                            aria-expanded={expanded}
+                            onClick={() => handleExpandClick(project.id)}
+                            aria-expanded={expanded === project.id}
                             aria-label="show more"
                         >
                             <ExpandMoreIcon />
                         </IconButton>
                     </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
+                    <Collapse in={expanded === project.id} timeout="auto" unmountOnExit>
                         <CardContent>
                             <Typography variant="body2" color="textSecondary" component="p">
                                 {project.description}
