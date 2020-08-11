@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom'
+import ToggleMotion from './ToggleMotion'
 
 import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles'
@@ -120,6 +121,7 @@ function SideNavBar(props) {
                     >
                         <MailIcon className={classes.icons} /> Contact
                     </Button>
+                    <ToggleMotion />
                 </Grid>
             </div>
             <div>
