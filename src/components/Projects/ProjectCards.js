@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "-1.7rem",
         color: "#212121",
         [theme.breakpoints.down('xs')]: {
-            fontSize: "1.25rem"
+            fontSize: "1.2rem"
         },
     },
     subheader: {

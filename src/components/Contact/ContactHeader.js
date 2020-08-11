@@ -20,12 +20,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function EducationHeader(props) {
+export default function ContactHeader(props) {
     const classes = useStyles();
 
     return (
         <Typography className={classes.title}>
-            EDUCATION
+            GET IN TOUCH!
         </Typography>
     )
 

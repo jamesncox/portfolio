@@ -9,6 +9,7 @@ import Home from './Home'
 import About from '../AboutMe/About'
 import Projects from '../Projects/Projects'
 import Education from '../Education/Education'
+import Contact from '../Contact/Contact'
 import Diagonals from './Diagonals'
 import SlowDiagonals from './SlowDiagonals'
 
@@ -44,6 +45,9 @@ export default function Main(props) {
                     </Route>
                     <Route exact path="/education">
                         <Education />
+                    </Route>
+                    <Route exact path="/contact">
+                        <Contact />
                     </Route>
                 </Switch>
             </div>
