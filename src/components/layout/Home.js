@@ -29,13 +29,23 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Jura', sans-serif",
         fontWeight: "bold",
         color: "#f50057",
-        fontSize: "1.5rem",
+        fontSize: "1.4rem",
         [theme.breakpoints.down('sm')]: {
             fontSize: "1.25rem"
         },
-        [theme.breakpoints.down('xs')]: {
-            fontSize: "1rem"
-        },
+        // [theme.breakpoints.down('xs')]: {
+        //     fontSize: "1rem"
+        // },
+    },
+    subtext: {
+        alignSelf: "center",
+        textAlign: "center",
+        fontFamily: "'Jura', sans-serif",
+        color: "#212121",
+        fontSize: "1.1rem",
+        // [theme.breakpoints.down('xs')]: {
+        //     fontSize: ".9rem"
+        // },
     }
 }));
 
@@ -45,11 +55,23 @@ export default function Home(props) {
     return (
         <>
             <Title />
+            <Typography className={classes.subtext}>
+                FULLSTACK ENGINEER
+            </Typography>
+            <Typography className={classes.subtext}>
+                CODING IN AUSTIN, TEXAS
+            </Typography>
+            <Typography className={classes.subtext}>
+                3 YEARS DEVELOPMENT EXPERIENCE
+            </Typography>
             <Box className={classes.box}>
                 <img className={classes.image} src={EllieAndJames} alt="Ellie and James" />
             </Box>
             <Typography className={classes.text}>
-                Hi. I'm James and I make websites.
+                Hi. I MAKE WEBSITES
+            </Typography>
+            <Typography className={classes.subtext}>
+                I WOULD LOVE TO WORK WITH YOU!
             </Typography>
         </>
     )
