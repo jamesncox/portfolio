@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     text: {
-        marginTop: theme.spacing(2),
+        marginTop: theme.spacing(1),
         alignSelf: "center",
         textAlign: "center",
         fontFamily: "'Jura', sans-serif",
@@ -31,11 +31,11 @@ const useStyles = makeStyles((theme) => ({
         color: "#f50057",
         fontSize: "1.4rem",
         [theme.breakpoints.down('sm')]: {
-            fontSize: "1.25rem"
+            fontSize: "1.25rem",
         },
-        // [theme.breakpoints.down('xs')]: {
-        //     fontSize: "1rem"
-        // },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: "1.1rem"
+        },
     },
     subtext: {
         alignSelf: "center",
@@ -43,9 +43,9 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Jura', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
-        // [theme.breakpoints.down('xs')]: {
-        //     fontSize: ".9rem"
-        // },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: ".9rem"
+        },
     }
 }));
 
