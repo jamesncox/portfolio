@@ -77,7 +77,7 @@
     {
         "id": 6,
         "name": "Kidtionary",
-        "image": "kidtionary new ss.jpg",
+        "image": "kidtionary large ss.jpg",
         "summary": "Dictionary designed for young readers",
         "description": "Kidtionary features a React front end, state managed by Redux, responsive design for all devices and logic to handle errors, misspelling, blank fields and un-recognized queries.",
         "github": "https://github.com/jamesncox/kidtionary",

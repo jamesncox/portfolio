@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Link from '@material-ui/core/Link';
+import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -44,6 +44,22 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(1),
         fontSize: 0
     },
+    technologies: {
+        marginTop: theme.spacing(2),
+        fontFamily: "'Jura', sans-serif",
+    },
+    header: {
+        fontFamily: "'Jura', sans-serif",
+        fontWeight: "bold",
+        fontSize: "1.25rem",
+        marginBottom: "-1.5rem"
+    },
+    subheader: {
+        fontFamily: "'Varta', sans-serif",
+        [theme.breakpoints.down('xs')]: {
+            fontSize: ".8rem"
+        },
+    }
 }));
 
 export default function ProjectCards() {
@@ -60,7 +76,16 @@ export default function ProjectCards() {
             return (
                 <Card className={classes.root} key={project.id}>
                     <CardHeader
+                        // titleTypographyProps={classes.header}
+                        disableTypography={true}
+                        className={classes.header}
                         title={project.name}
+                    // subheader={project.summary}
+                    />
+                    <CardHeader
+                        // titleTypographyProps={classes.header}
+                        disableTypography={true}
+                        className={classes.subheader}
                         subheader={project.summary}
                     />
                     <CardMedia
@@ -106,8 +131,11 @@ export default function ProjectCards() {
                     </CardActions>
                     <Collapse in={expanded === project.id} timeout="auto" unmountOnExit>
                         <CardContent>
-                            <Typography variant="body2" color="textSecondary" component="p">
+                            <Typography className={classes.subheader} color="textSecondary" component="p">
                                 {project.description}
+                            </Typography>
+                            <Typography className={classes.technologies}>
+                                {project.technologies.join(', ')}
                             </Typography>
                         </CardContent>
                     </Collapse>

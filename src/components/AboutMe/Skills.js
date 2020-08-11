@@ -30,9 +30,6 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(2),
         maxWidth: 450,
         backgroundColor: "#eeeeee",
-        // [theme.breakpoints.down('sm')]: {
-        //     width: 350
-        // },
     },
 }));
 
