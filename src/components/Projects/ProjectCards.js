@@ -14,6 +14,7 @@ import Typography from '@material-ui/core/Typography';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -39,6 +40,10 @@ const useStyles = makeStyles((theme) => ({
     expandOpen: {
         transform: 'rotate(180deg)',
     },
+    link: {
+        margin: theme.spacing(1),
+        fontSize: 0
+    }
 }));
 
 export default function ProjectCards() {
@@ -69,11 +74,29 @@ export default function ProjectCards() {
                 </Typography>
             </CardContent> */}
                     <CardActions disableSpacing>
-                        <IconButton aria-label="add to favorites">
-                            <GitHubIcon />
+                        <IconButton aria-label="link to Github repository">
+                            <Link
+                                className={classes.link}
+                                color="inherit"
+                                underline="none"
+                                rel="noopener noreferrer"
+                                href={project.github}
+                                target="_blank"
+                            >
+                                <GitHubIcon />
+                            </Link>
                         </IconButton>
-                        <IconButton aria-label="share">
-                            <LaptopMacIcon />
+                        <IconButton aria-label="link to project website">
+                            <Link
+                                className={classes.link}
+                                color="inherit"
+                                underline="none"
+                                rel="noopener noreferrer"
+                                href={project.url}
+                                target="_blank"
+                            >
+                                <LaptopMacIcon />
+                            </Link>
                         </IconButton>
                         <IconButton
                             className={clsx(classes.expand, {
