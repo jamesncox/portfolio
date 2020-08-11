@@ -18,7 +18,7 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: 600,
+        width: 700,
         alignSelf: "center",
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(2),
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
     media: {
         height: 0,
-        paddingTop: '56.25%',
+        paddingTop: '60.25%',
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -95,7 +95,7 @@ export default function ProjectCards() {
                         </IconButton>
                         <IconButton
                             className={clsx(classes.expand, {
-                                [classes.expandOpen]: expanded,
+                                [classes.expandOpen]: expanded === project.id,
                             })}
                             onClick={() => handleExpandClick(project.id)}
                             aria-expanded={expanded === project.id}

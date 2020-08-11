@@ -43,5 +43,20 @@
             "JavaScript",
             "Redux"
         ]
+    },
+    {
+        "id": 4,
+        "name": "Memes vs Gifs",
+        "image": "mvg new ss.jpg",
+        "summary": "(Desktop only) A meme and gif generator",
+        "description": "This app is my take on a meme or gif generator. A user can either sign up or log in if they already have an account, afterwhich they are given their own profile. A user can create combinations of their favorite randomly-generated memes or gifs and captions. The created meme or gif and caption combo is saved to the database and displayed in the user's profile page, as well as the designated meme or gif show page for everyone's memes and gifs. Gifs are provided by Giphy.com. A user can also create their own caption, which gets saved to the database, and that caption is available for selection by anyone. Captions can be sorted by ratings, NSFW, PG or viewing all ratings simultaneously. A created caption must be given a rating to persist to the database. This app utilizes a Rails API back-end with a postgreSQL database, as well as a React.js front-end.",
+        "github": "https://github.com/jamesncox/memes-vs-gifs-react",
+        "url": "https://memes-vs-gifs.netlify.app/",
+        "technologies": [
+            "React",
+            "Rails",
+            "JavaScript",
+            "CSS"
+        ]
     }
 ]
