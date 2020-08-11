@@ -12,9 +12,10 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LaptopMacIcon from '@material-ui/icons/LaptopMac';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Link from '@material-ui/core/Link'
+import DesktopWindowsIcon from '@material-ui/icons/DesktopWindows';
+import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -41,8 +42,14 @@ const useStyles = makeStyles((theme) => ({
         transform: 'rotate(180deg)',
     },
     link: {
-        margin: theme.spacing(1),
-        fontSize: 0
+        marginRight: theme.spacing(1),
+        marginBottom: "-.7rem",
+        color: "#616161",
+        fontSize: "1rem"
+    },
+    linkText: {
+        marginBottom: "-.4rem",
+        color: "#616161",
     },
     technologies: {
         marginTop: theme.spacing(2),
@@ -62,6 +69,17 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Varta', sans-serif",
         [theme.breakpoints.down('xs')]: {
             fontSize: ".8rem"
+        },
+    },
+    text: {
+        // fontSize: ".9rem",
+        [theme.breakpoints.down('xs')]: {
+            fontSize: ".7rem"
+        },
+    },
+    icon: {
+        [theme.breakpoints.down('xs')]: {
+            fontSize: "1rem"
         },
     }
 }));
@@ -98,7 +116,7 @@ export default function ProjectCards() {
                         title={project.name}
                     />
                     <CardActions disableSpacing>
-                        <IconButton aria-label="link to Github repository">
+                        <Button>
                             <Link
                                 className={classes.link}
                                 color="inherit"
@@ -107,10 +125,20 @@ export default function ProjectCards() {
                                 href={project.github}
                                 target="_blank"
                             >
-                                <GitHubIcon />
+                                <GitHubIcon className={classes.icon} />
                             </Link>
-                        </IconButton>
-                        <IconButton aria-label="link to project website">
+                            <Link
+                                className={classes.linkText}
+                                color="inherit"
+                                underline="none"
+                                rel="noopener noreferrer"
+                                href={project.github}
+                                target="_blank"
+                            >
+                                <Typography className={classes.text}>Github</Typography>
+                            </Link>
+                        </Button>
+                        <Button>
                             <Link
                                 className={classes.link}
                                 color="inherit"
@@ -119,9 +147,19 @@ export default function ProjectCards() {
                                 href={project.url}
                                 target="_blank"
                             >
-                                <LaptopMacIcon />
+                                <DesktopWindowsIcon className={classes.icon} />
                             </Link>
-                        </IconButton>
+                            <Link
+                                className={classes.linkText}
+                                color="inherit"
+                                underline="none"
+                                rel="noopener noreferrer"
+                                href={project.url}
+                                target="_blank"
+                            >
+                                <Typography className={classes.text}>Live Site</Typography>
+                            </Link>
+                        </Button>
                         <IconButton
                             className={clsx(classes.expand, {
                                 [classes.expandOpen]: expanded === project.id,

@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     image: {
         height: 500,
         border: "solid 10px #212121",
-        borderRadius: "1.5rem",
+        borderRadius: "1rem",
         [theme.breakpoints.down('sm')]: {
             height: 450
         },
