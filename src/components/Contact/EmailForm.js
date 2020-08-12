@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ThankYouMessage from './ThankYouMessage'
 
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
@@ -51,10 +52,6 @@ const useStyles = makeStyles((theme) => ({
     message: {
         width: "100%"
     },
-    formText: {
-        fontFamily: "'Varta', sans-serif",
-        color: "white"
-    }
 }));
 
 export default function EmailForm(props) {
@@ -63,9 +60,11 @@ export default function EmailForm(props) {
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [open, setOpen] = useState(false)
 
     const handleUsername = (e) => {
         setUsername(e.target.value)
+        setOpen(false)
     }
 
     const handleEmail = (e) => {
@@ -76,84 +75,85 @@ export default function EmailForm(props) {
         setMessage(e.target.value)
     }
 
+    const displayThankYouMessage = () => {
+        setOpen(true)
+    }
+
     const handleLogin = e => {
         e.preventDefault()
-
+        displayThankYouMessage()
         setUsername('')
         setEmail('')
         setMessage('')
     }
 
     return (
-        <Box className={classes.root}>
-            <Grid item xs={12} sm={12} md={5} component={Paper} elevation={3} square>
-                <div className={classes.paper}>
-                    <Typography className={classes.header}>
-                        Send me a message
+        <>
+            {open === true ? <ThankYouMessage /> : null}
+            <Box className={classes.root}>
+                <Grid item xs={12} sm={12} md={5} component={Paper} elevation={3} square>
+                    <div className={classes.paper}>
+                        <Typography className={classes.header}>
+                            Send me a message
                         </Typography>
-                    <form
-                        className={classes.form}
-                        noValidate
-                        onSubmit={e => handleLogin(e)}
-                    >
-                        <TextField
-                            className={classes.formText}
-                            variant="outlined"
-                            margin="normal"
-                            required
-                            fullWidth
-                            placeholder="Your Name"
-                            id="Your Name"
-                            label="Your Name"
-                            name="Your Name"
-                            onChange={handleUsername}
-                            value={username}
-                            size="small"
-                        // error={username === ""}
-                        // helperText={username === "" ? 'Must provide name' : ' '}
-                        // autoFocus
-                        />
-                        <TextField
-                            variant="outlined"
-                            margin="normal"
-                            fullWidth
-                            placeholder="Your Email"
-                            name="Your Email"
-                            label="Your Email"
-                            type="email"
-                            id="Your Email"
-                            onChange={handleEmail}
-                            value={email}
-                            required
-                            size="small"
-                        />
-                        <TextField
-                            placeholder="Your message"
-                            multiline
-                            rows={10}
-                            margin="normal"
-                            variant="outlined"
-                            name="Your Message"
-                            label="Your Message"
-                            type="text"
-                            id="YourMessage"
-                            className={classes.message}
-                            onChange={handleMessage}
-                            value={message}
-                            required
-                            size="small"
-                        />
-                        <Button
-                            type="submit"
-                            fullWidth
-                            variant="contained"
-                            className={classes.submit}
+                        <form
+                            className={classes.form}
+                            onSubmit={e => handleLogin(e)}
+                            data-netlify="true"
                         >
-                            Send Message
+                            <TextField
+                                className={classes.formText}
+                                variant="outlined"
+                                margin="normal"
+                                required
+                                fullWidth
+                                id="Name"
+                                label="Name"
+                                name="Name"
+                                onChange={handleUsername}
+                                value={username}
+                                size="small"
+                            />
+                            <TextField
+                                variant="outlined"
+                                margin="normal"
+                                fullWidth
+                                name="Email"
+                                label="Email"
+                                type="email"
+                                id="Email"
+                                onChange={handleEmail}
+                                value={email}
+                                required
+                                size="small"
+                            />
+                            <TextField
+                                multiline
+                                rows={10}
+                                margin="normal"
+                                variant="outlined"
+                                name="Message"
+                                label="Message"
+                                type="text"
+                                id="Message"
+                                className={classes.message}
+                                onChange={handleMessage}
+                                value={message}
+                                required
+                                size="small"
+                            />
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                className={classes.submit}
+                            >
+                                Send Message
                             </Button>
-                    </form>
-                </div>
-            </Grid>
-        </Box>
+                        </form>
+                    </div>
+                </Grid>
+            </Box>
+        </>
     )
 }
