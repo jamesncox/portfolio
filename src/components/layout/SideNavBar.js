@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(1)
     },
     openButton: {
-        fontSize: "30px",
+        fontSize: "2rem",
         cursor: "pointer",
         position: "fixed",
         color: "#9e9e9e",
