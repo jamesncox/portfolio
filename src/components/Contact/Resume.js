@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#bdbdbd",
         color: "#212121",
         fontWeight: "bold",
+        '&:first-child': {
+            marginTop: theme.spacing(1)
+        },
         '&:hover': {
             backgroundColor: "#f50057",
             color: "#eeeeee",
