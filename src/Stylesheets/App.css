@@ -53,11 +53,11 @@ body {
   overflow: hidden;
 }
 
-/* @media only screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
   .topnav {
-    background-color: #212121fb;
-  }
-} */
+     height: 4.5rem;
+    }
+}
 
 .testColor {
   color: #212121d0;
