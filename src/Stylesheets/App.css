@@ -29,6 +29,7 @@ body {
 
 /* SideNavBar CSS */
 .sidenav {
+  display: flex;
   height: 100%;
   width: 0;
   position: fixed;
