@@ -43,9 +43,12 @@ const useStyles = makeStyles((theme) => ({
         position: "fixed",
         color: "#9e9e9e",
         zIndex: "1",
-        marginTop: "-.45rem",
+        marginTop: "-.55rem",
         marginLeft: theme.spacing(1),
-    }
+    },
+    [theme.breakpoints.down('xs')]: {
+        fontSize: "3.2rem"
+    },
 }));
 
 function SideNavBar(props) {
