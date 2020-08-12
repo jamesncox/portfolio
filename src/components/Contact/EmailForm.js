@@ -34,10 +34,15 @@ const useStyles = makeStyles((theme) => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
+        backgroundColor: "#212121",
+        color: "#eeeeee"
     },
     header: {
         padding: '1em'
     },
+    message: {
+        width: "100%"
+    }
 }));
 
 export default function EmailForm(props) {
@@ -52,11 +57,11 @@ export default function EmailForm(props) {
     }
 
     const handleEmail = (e) => {
-
+        setEmail(e.target.value)
     }
 
     const handleMessage = (e) => {
-
+        setMessage(e.target.value)
     }
 
     const handleLogin = e => {
@@ -88,55 +93,53 @@ export default function EmailForm(props) {
                             margin="normal"
                             required
                             fullWidth
+                            placeholder="Your Name"
                             id="Your Name"
                             label="Your Name"
                             name="Your Name"
-                            autoComplete="Your Name"
                             onChange={handleUsername}
                             value={username}
-                        // autoFocus
+                            required
+                            // error={username === ""}
+                            // helperText={username === "" ? 'Must provide name' : ' '}
+                            autoFocus
                         />
                         <TextField
                             variant="outlined"
                             margin="normal"
                             required
                             fullWidth
+                            placeholder="Your Email"
                             name="Your Email"
                             label="Your Email"
                             type="email"
                             id="Your Email"
                             onChange={handleEmail}
                             value={email}
-                            autoComplete="Your Email"
+                            required
                         />
                         <TextField
-                            variant="outlined"
+                            placeholder="Your message"
+                            multiline
+                            rows={10}
                             margin="normal"
-                            required
-                            fullWidth
-                            name="Message"
-                            label="Message"
+                            variant="outlined"
+                            name="Your Message"
+                            label="Your Message"
                             type="text"
-                            id="Message"
+                            id="YourMessage"
+                            className={classes.message}
                             onChange={handleMessage}
                             value={message}
-                            autoComplete="current-password"
-                        />
-                        <TextField
-                            id="outlined-textarea"
-                            label="Multiline Placeholder"
-                            placeholder="Placeholder"
-                            multiline
-                            variant="outlined"
+                            required
                         />
                         <Button
                             type="submit"
                             fullWidth
                             variant="contained"
-                            color="secondary"
                             className={classes.submit}
                         >
-                            Send email
+                            Send Message
                             </Button>
                     </form>
                 </div>
