@@ -33,7 +33,11 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         margin: theme.spacing(2),
         maxWidth: 450,
+        height: 125,
         backgroundColor: "#eeeeee",
+        [theme.breakpoints.down('sm')]: {
+            height: 100
+        },
     },
     github: {
         fontSize: "4rem",
@@ -64,7 +68,7 @@ export default function Social() {
         <Card className={classes.card}>
             <Grid container spacing={3}>
                 <Grid item xs={4}>
-                    <CardContent >
+                    <CardContent className={classes.content}>
                         <IconButton className={classes.text}>
                             <Link
                                 color="inherit"
