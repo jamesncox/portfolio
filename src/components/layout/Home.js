@@ -1,20 +1,30 @@
 import React from 'react'
-import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import EllieAndJames from '../../assets/images/ellie and james.jpg'
 import Title from './Title'
 
 const useStyles = makeStyles((theme) => ({
-    box: {
+    paper: {
         alignSelf: "center",
         marginTop: theme.spacing(2),
         height: "auto",
+        padding: theme.spacing(1.5),
+        backgroundColor: "#212121",
+        minWidth: 360,
+        [theme.breakpoints.down('sm')]: {
+            minWidth: 300,
+            padding: theme.spacing(1.25),
+        },
+        [theme.breakpoints.down('xs')]: {
+            minWidth: 200,
+            padding: theme.spacing(1),
+        }
     },
     image: {
         height: 500,
-        border: "solid 10px #212121",
-        borderRadius: "1rem",
+        borderRadius: "1.5rem",
         [theme.breakpoints.down('sm')]: {
             height: 450,
         },
@@ -64,9 +74,9 @@ export default function Home(props) {
             <Typography className={classes.subtext}>
                 3 YEARS DEVELOPMENT EXPERIENCE
             </Typography>
-            <Box className={classes.box}>
+            <Paper className={classes.paper}>
                 <img className={classes.image} src={EllieAndJames} alt="Ellie and James" />
-            </Box>
+            </Paper>
             <Typography className={classes.text}>
                 Hi. I MAKE WEBSITES
             </Typography>
