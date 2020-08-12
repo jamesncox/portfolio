@@ -12,13 +12,19 @@ const useStyles = makeStyles((theme) => ({
         maxWidth: "100%",
         height: "auto",
     },
+    topText: {
+        fontFamily: "'Varta', sans-serif",
+        color: "#212121",
+        fontSize: "1.1rem",
+        marginTop: theme.spacing(2),
+        [theme.breakpoints.down('xs')]: {
+            fontSize: ".9rem"
+        },
+    },
     text: {
         fontFamily: "'Varta', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
-        '&:first-child': {
-            marginTop: theme.spacing(2)
-        },
         [theme.breakpoints.down('xs')]: {
             fontSize: ".9rem"
         },
@@ -27,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         margin: theme.spacing(2),
         maxWidth: 800,
-        // backgroundColor: "#eeeeee"
     },
 }));
 
@@ -37,7 +42,7 @@ export default function DesiredRole(props) {
     return (
         <Card className={classes.card}>
             <CardContent>
-                <Typography className={classes.text}>
+                <Typography className={classes.topText}>
                     I am looking for front-end, back-end or full-stack positions featuring some or all of my current skills and related technologies.
                 </Typography>
             </CardContent>
