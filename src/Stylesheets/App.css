@@ -39,6 +39,7 @@ body {
   overflow-x: hidden;
   transition: 0.6s;
   padding-top: 5rem;
+  text-align: center;
 }
 
 .topnav {
