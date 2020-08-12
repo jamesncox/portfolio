@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        marginTop: theme.spacing(10),
+        marginTop: theme.spacing(2),
         alignSelf: "center",
         fontSize: "2rem",
         fontWeight: "bold",
@@ -21,12 +21,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function ContactHeader(props) {
+export default function ResumeHeader(props) {
     const classes = useStyles();
 
     return (
         <Typography className={classes.title}>
-            GET IN TOUCH
+            RESUME
         </Typography>
     )
 

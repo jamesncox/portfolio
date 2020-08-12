@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         margin: theme.spacing(2),
         maxWidth: 800,
-        backgroundColor: "#eeeeee"
+        // backgroundColor: "#eeeeee"
     },
     large: {
         marginTop: theme.spacing(2),

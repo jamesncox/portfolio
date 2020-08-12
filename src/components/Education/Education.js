@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         margin: theme.spacing(2),
         width: 800,
-        backgroundColor: "#eeeeee",
+        // backgroundColor: "#eeeeee",
         '&:last-child': {
             marginBottom: theme.spacing(20)
         },
