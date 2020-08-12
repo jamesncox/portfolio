@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Varta', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
+        '&:first-child': {
+            marginTop: theme.spacing(2)
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: ".9rem"
         },
