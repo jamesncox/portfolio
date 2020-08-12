@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     title: {
+        marginTop: theme.spacing(10),
         alignSelf: "center",
         fontSize: "2rem",
         fontWeight: "bold",
@@ -11,11 +12,11 @@ const useStyles = makeStyles((theme) => ({
         color: "#f50057",
         [theme.breakpoints.down('sm')]: {
             fontSize: "1.75rem",
-            marginTop: theme.spacing(1)
+            // marginTop: theme.spacing(1)
         },
         [theme.breakpoints.down('xs')]: {
             fontSize: "1.5rem",
-            marginTop: theme.spacing(2)
+            // marginTop: theme.spacing(2)
         }
     },
 }));

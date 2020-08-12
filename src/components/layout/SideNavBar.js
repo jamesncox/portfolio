@@ -32,17 +32,20 @@ const useStyles = makeStyles((theme) => ({
     },
     closeButton: {
         position: "absolute",
-        top: "-.5rem",
+        top: "-1rem",
         right: "0",
         fontSize: "3.2rem",
         color: "#9e9e9e",
+        marginRight: theme.spacing(1)
     },
     openButton: {
         fontSize: "30px",
         cursor: "pointer",
-        // position: "absolute",
-        float: "right",
-        marginRight: theme.spacing(1)
+        position: "fixed",
+        color: "#9e9e9e",
+        zIndex: "1",
+        marginTop: "-.45rem",
+        marginLeft: theme.spacing(1)
     }
 }));
 

@@ -30,6 +30,7 @@ export default function Main(props) {
     return (
         <Router>
             <div className={classes.root}>
+                <div className="topnav" />
                 <Diagonals />
                 <SlowDiagonals />
                 <SideNavBar />
