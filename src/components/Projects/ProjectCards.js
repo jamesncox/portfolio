@@ -65,24 +65,24 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: "-1.7rem",
         color: "#212121",
         [theme.breakpoints.down('xs')]: {
-            fontSize: "1.2rem"
+            fontSize: "1.3rem"
         },
     },
     subheader: {
         fontFamily: "'Varta', sans-serif",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".9rem"
+            fontSize: "1rem"
         },
     },
     iconText: {
         fontSize: ".9rem",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".7rem"
+            fontSize: ".8rem"
         },
     },
     icon: {
         [theme.breakpoints.down('xs')]: {
-            fontSize: "1rem"
+            fontSize: "1.2rem"
         },
     }
 }));
