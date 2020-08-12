@@ -40,13 +40,13 @@ const useStyles = makeStyles((theme) => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
-        backgroundColor: "#212121",
-        color: "#eeeeee",
-        fontFamily: "'Jura', sans-serif",
+        fontFamily: "'Varta', sans-serif",
+        backgroundColor: "#bdbdbd",
+        color: "#212121",
+        fontWeight: "bold",
         '&:hover': {
-            color: "#212121",
-            fontWeight: "bold",
-            backgroundColor: "#9e9e9e"
+            backgroundColor: "#00c2b8",
+            color: "#eeeeee",
         },
     },
     header: {

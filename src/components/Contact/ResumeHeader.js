@@ -26,7 +26,7 @@ export default function ResumeHeader(props) {
 
     return (
         <Typography className={classes.title}>
-            RESUME
+            GITCONNECTED / RESUME
         </Typography>
     )
 

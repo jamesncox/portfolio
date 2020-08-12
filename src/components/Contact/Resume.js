@@ -4,46 +4,75 @@ import Typography from '@material-ui/core/Typography'
 import { makeStyles } from '@material-ui/core/styles'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
+import Link from '@material-ui/core/Link'
+import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles((theme) => ({
-    text: {
+    card: {
+        alignSelf: "center",
+        marginTop: theme.spacing(2),
+        width: 250,
+        // backgroundColor: ""
+    },
+    links: {
         fontFamily: "'Varta', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
+        textAlign: "center",
+        '&:hover': {
+            color: "#f50057",
+            fontWeight: "bold",
+        },
         [theme.breakpoints.down('xs')]: {
             fontSize: ".9rem"
         },
     },
-    card: {
-        alignSelf: "center",
-        margin: theme.spacing(2),
-        maxWidth: 800,
-    },
-    large: {
-        marginTop: theme.spacing(2),
-        width: theme.spacing(12),
-        height: theme.spacing(12),
-        [theme.breakpoints.down('xs')]: {
-            width: theme.spacing(8),
-            height: theme.spacing(8),
+    button: {
+        fontFamily: "'Varta', sans-serif",
+        backgroundColor: "#bdbdbd",
+        color: "#212121",
+        fontWeight: "bold",
+        '&:hover': {
+            backgroundColor: "#f50057",
+            color: "#eeeeee",
         },
-    },
+    }
 }));
 
 export default function Resume() {
     const classes = useStyles()
 
     return (
-        <Card className={classes.card}>
+        <Card elevation={3} className={classes.card}>
             <CardContent>
-                <Typography className={classes.text}>
-                    Button to down resume
-                    </Typography>
+                <Typography className={classes.links}>
+                    <Button className={classes.button} variant="contained">
+                        <Link
+                            color="inherit"
+                            underline="none"
+                            rel="noopener noreferrer"
+                            href="https://gitconnected.com/jamesncox"
+                            target="_blank"
+                        >
+                            @JAMESNCOX
+                    </Link>
+                    </Button>
+                </Typography>
             </CardContent>
             <CardContent>
-                <Typography className={classes.text}>
-                    Link to gitconnected
-                    </Typography>
+                <Typography className={classes.links}>
+                    <Button className={classes.button} variant="contained">
+                        <Link
+                            color="inherit"
+                            underline="none"
+                            rel="noopener noreferrer"
+                            href="https://gitconnected.com/jamesncox/resume"
+                            target="_blank"
+                        >
+                            RESUME
+                    </Link>
+                    </Button>
+                </Typography>
             </CardContent>
         </Card>
     )
