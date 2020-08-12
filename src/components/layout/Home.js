@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
             height: 450,
         },
         [theme.breakpoints.down('xs')]: {
-            height: 350,
+            height: 400,
         }
     },
     text: {
@@ -41,10 +41,10 @@ const useStyles = makeStyles((theme) => ({
         color: "#f50057",
         fontSize: "1.4rem",
         [theme.breakpoints.down('sm')]: {
-            fontSize: "1.25rem",
+            fontSize: "1.3rem",
         },
         [theme.breakpoints.down('xs')]: {
-            fontSize: "1.1rem"
+            fontSize: "1.2rem"
         },
     },
     subtext: {
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#212121",
         fontSize: "1.1rem",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".9rem"
+            fontSize: "1rem"
         },
     }
 }));
