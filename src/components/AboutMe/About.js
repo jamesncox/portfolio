@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import JamesSanDiego from '../../assets/images/james san diego.jpg'
 import Header from './Header'
 import SkillsHeader from './SkillsHeader'
@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#212121",
         fontSize: "1.1rem",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".8rem"
+            fontSize: ".9rem"
         },
     },
     card: {
@@ -38,8 +38,13 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function About(props) {
+export default function About() {
     const classes = useStyles()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <>
             <Header />

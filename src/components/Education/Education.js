@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import EducationHeader from './EducationHeader'
 import FlatironSchool from '../../assets/images/flatironschool.png'
 import UniversityOfMemphis from '../../assets/images/memphis-logo.jpg'
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#212121",
         fontSize: "1.1rem",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".8rem"
+            fontSize: ".9rem"
         },
     },
     school: {
@@ -52,6 +52,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Education() {
     const classes = useStyles()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <>

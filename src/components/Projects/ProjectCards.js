@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import ProjectData from '../../data/projects.json'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -74,7 +74,7 @@ const useStyles = makeStyles((theme) => ({
             fontSize: ".9rem"
         },
     },
-    text: {
+    iconText: {
         fontSize: ".9rem",
         [theme.breakpoints.down('xs')]: {
             fontSize: ".7rem"
@@ -91,6 +91,10 @@ export default function ProjectCards() {
     const classes = useStyles();
     const [expanded, setExpanded] = useState(true);
     const img = require.context('../../assets/images/', true)
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const handleExpandClick = (id) => {
         setExpanded(expanded === id ? false : id);
@@ -138,7 +142,7 @@ export default function ProjectCards() {
                                 href={project.github}
                                 target="_blank"
                             >
-                                <Typography className={classes.text}>Github</Typography>
+                                <Typography className={classes.iconText}>Github</Typography>
                             </Link>
                         </Button>
                         <Button>
@@ -160,7 +164,7 @@ export default function ProjectCards() {
                                 href={project.url}
                                 target="_blank"
                             >
-                                <Typography className={classes.text}>Live Site</Typography>
+                                <Typography className={classes.iconText}>Live Site</Typography>
                             </Link>
                         </Button>
                         <IconButton

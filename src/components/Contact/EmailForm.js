@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ThankYouMessage from './ThankYouMessage'
 
 import Button from '@material-ui/core/Button';
@@ -43,11 +43,22 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#212121",
         color: "#eeeeee",
         fontFamily: "'Jura', sans-serif",
+        '&:hover': {
+            color: "#212121",
+            fontWeight: "bold",
+            backgroundColor: "#9e9e9e"
+        },
     },
     header: {
         fontFamily: "'Jura', sans-serif",
         fontSize: "1.5rem",
         color: "#212121",
+        [theme.breakpoints.down('sm')]: {
+            fontSize: "1.25rem"
+        },
+        [theme.breakpoints.down('xs')]: {
+            fontSize: "1.15rem"
+        },
     },
     message: {
         width: "100%"
@@ -62,6 +73,10 @@ export default function EmailForm(props) {
     const [message, setMessage] = useState('')
     const [open, setOpen] = useState(false)
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const handleUsername = (e) => {
         setUsername(e.target.value)
         setOpen(false)
@@ -75,13 +90,13 @@ export default function EmailForm(props) {
         setMessage(e.target.value)
     }
 
-    const displayThankYouMessage = () => {
-        setOpen(true)
-    }
+    // const displayThankYouMessage = () => {
+    //     setOpen(true)
+    // }
 
     const handleLogin = e => {
         e.preventDefault()
-        displayThankYouMessage()
+        setOpen(true)
         setUsername('')
         setEmail('')
         setMessage('')
