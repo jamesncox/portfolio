@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
     subheader: {
         fontFamily: "'Varta', sans-serif",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".8rem"
+            fontSize: ".9rem"
         },
     },
     text: {
