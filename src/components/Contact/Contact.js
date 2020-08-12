@@ -2,6 +2,7 @@ import React from 'react'
 import ContactHeader from './ContactHeader'
 import SocialHeader from './SocialHeader'
 import Social from './Social'
+import EmailForm from './EmailForm'
 
 import { makeStyles } from '@material-ui/core/styles'
 import Paper from '@material-ui/core/Paper'
@@ -25,11 +26,12 @@ export default function Contact() {
     return (
         <>
             <ContactHeader />
-            <Paper className={classes.paper}>
+            {/* <Paper className={classes.paper}>
                 <Typography className={classes.text}>
                     This is where I will put an email contact form
                 </Typography>
-            </Paper>
+            </Paper> */}
+            <EmailForm />
             <SocialHeader />
             <Social />
         </>
