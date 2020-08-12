@@ -23,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(2),
+        '&:last-child': {
+            marginBottom: theme.spacing(20)
+        },
         [theme.breakpoints.down('sm')]: {
             maxWidth: "92%",
         },
@@ -72,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     text: {
-        // fontSize: ".9rem",
+        fontSize: ".9rem",
         [theme.breakpoints.down('xs')]: {
             fontSize: ".7rem"
         },

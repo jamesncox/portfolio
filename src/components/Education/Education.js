@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(2),
         width: 800,
         backgroundColor: "#eeeeee",
+        '&:last-child': {
+            marginBottom: theme.spacing(20)
+        },
         [theme.breakpoints.down('sm')]: {
             width: "92%"
         },

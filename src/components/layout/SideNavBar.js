@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#9e9e9e",
         zIndex: "1",
         marginTop: "-.45rem",
-        marginLeft: theme.spacing(1)
+        marginLeft: theme.spacing(1),
     }
 }));
 

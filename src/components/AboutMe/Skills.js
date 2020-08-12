@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(2),
         maxWidth: 450,
         backgroundColor: "#eeeeee",
+        marginBottom: theme.spacing(10)
     },
 }))
 

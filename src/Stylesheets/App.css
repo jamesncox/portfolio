@@ -47,7 +47,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #212121f8;
+  background-color:#212121fb;
   z-index: 1;
   overflow: hidden;
 }
+
+/* @media only screen and (max-width: 960px) {
+  .topnav {
+    background-color: #212121fb;
+  }
+} */
