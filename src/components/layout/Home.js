@@ -16,10 +16,10 @@ const useStyles = makeStyles((theme) => ({
         border: "solid 10px #212121",
         borderRadius: "1rem",
         [theme.breakpoints.down('sm')]: {
-            height: 450
+            height: 450,
         },
         [theme.breakpoints.down('xs')]: {
-            height: 350
+            height: 350,
         }
     },
     text: {

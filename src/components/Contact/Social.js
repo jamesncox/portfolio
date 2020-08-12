@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
     },
     github: {
         fontSize: "4rem",
-        marginBottom: "-1rem",
         [theme.breakpoints.down('sm')]: {
             fontSize: "2.5rem"
         },
@@ -45,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     linkedIn: {
         fontSize: "4.5rem",
         color: "#0e76a8",
-        marginBottom: "-1rem",
         [theme.breakpoints.down('sm')]: {
             fontSize: "3rem"
         },
@@ -53,7 +51,6 @@ const useStyles = makeStyles((theme) => ({
     twitter: {
         color: "#00acee",
         fontSize: "4.5rem",
-        marginBottom: "-1rem",
         [theme.breakpoints.down('sm')]: {
             fontSize: "3rem"
         },
