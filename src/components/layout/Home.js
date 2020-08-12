@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         }
     },
     text: {
-        marginTop: theme.spacing(1),
+        marginTop: theme.spacing(2),
         alignSelf: "center",
         textAlign: "center",
         fontFamily: "'Jura', sans-serif",
