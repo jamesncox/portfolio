@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         fontSize: "2rem",
         fontWeight: "bold",
-        fontFamily: "'Bungee Inline', cursive",
+        fontFamily: "'Jura', sans-serif",
         color: "#f50057",
         [theme.breakpoints.down('sm')]: {
             fontSize: "1.75rem",

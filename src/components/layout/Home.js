@@ -48,9 +48,10 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     subtext: {
+        marginTop: theme.spacing(1),
         alignSelf: "center",
         textAlign: "center",
-        fontFamily: "'Jura', sans-serif",
+        fontFamily: "'Varta', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
         [theme.breakpoints.down('xs')]: {
