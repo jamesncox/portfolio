@@ -52,12 +52,12 @@ body {
   z-index: 1;
   overflow: hidden;
 }
-
+/* 
 @media only screen and (max-width: 960px) {
   .topnav {
      height: 4.5rem;
     }
-}
+} */
 
 .testColor {
   color: #212121d0;

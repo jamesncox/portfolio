@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
             height: 450,
         },
         [theme.breakpoints.down('xs')]: {
-            height: 400,
+            height: 350,
         }
     },
     text: {
