@@ -115,6 +115,8 @@ export default function EmailForm(props) {
                             className={classes.form}
                             onSubmit={e => handleLogin(e)}
                             data-netlify="true"
+                            name="contact"
+                            method="post"
                         >
                             <input type="hidden" name="form-name" value="contact" />
                             <TextField
