@@ -11,20 +11,22 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(2),
         height: "auto",
         padding: theme.spacing(1.5),
-        backgroundColor: "#212121",
+        paddingBottom: 9,
         minWidth: 360,
         [theme.breakpoints.down('sm')]: {
             minWidth: 300,
             padding: theme.spacing(1.25),
+            paddingBottom: 6.5
         },
         [theme.breakpoints.down('xs')]: {
             minWidth: 200,
             padding: theme.spacing(1),
+            paddingBottom: 4.5
         }
     },
     image: {
         height: 500,
-        borderRadius: "1.5rem",
+        borderRadius: ".25rem",
         [theme.breakpoints.down('sm')]: {
             height: 450,
         },

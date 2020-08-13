@@ -46,7 +46,7 @@ export default function Resume() {
     const classes = useStyles()
 
     return (
-        <Card elevation={3} className={classes.card}>
+        <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.links}>
                     <Button className={classes.button} variant="contained">

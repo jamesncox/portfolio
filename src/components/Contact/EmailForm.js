@@ -115,7 +115,7 @@ export default function EmailForm(props) {
         <>
             {open === true ? <ThankYouMessage /> : null}
             <Box className={classes.root}>
-                <Grid item xs={12} sm={12} md={5} component={Paper} elevation={3} >
+                <Grid item xs={12} sm={12} md={5} component={Paper} >
                     <div className={classes.paper}>
                         <Typography className={classes.header}>
                             Send me a message
