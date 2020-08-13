@@ -16,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
     },
     icons: {
         marginRight: theme.spacing(2),
-        fontSize: "2rem",
+        fontSize: "2.5rem",
         [theme.breakpoints.down('md')]: {
-            fontSize: "1.5rem",
+            fontSize: "2rem",
         }
     },
     text: {
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         right: "0",
         fontSize: "3.2rem",
         color: "#9e9e9e",
-        marginRight: theme.spacing(1)
+        marginRight: theme.spacing(1),
     },
     openButton: {
         fontSize: "2rem",
@@ -47,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: theme.spacing(1),
     },
     [theme.breakpoints.down('xs')]: {
-        fontSize: "3.2rem"
+
     },
 }));
 
@@ -76,7 +76,8 @@ function SideNavBar(props) {
                         component={RouterLink}
                         to="/"
                     >
-                        <HomeIcon className={classes.icons} /> Home
+                        <HomeIcon className={classes.icons} />
+                        Home
                     </Button>
                     <Button
                         className={classes.text}
@@ -84,7 +85,8 @@ function SideNavBar(props) {
                         component={RouterLink}
                         to="/about"
                     >
-                        <PersonIcon className={classes.icons} /> About
+                        <PersonIcon className={classes.icons} />
+                        About
                     </Button>
                     <Button
                         className={classes.text}
@@ -92,7 +94,8 @@ function SideNavBar(props) {
                         component={RouterLink}
                         to="/projects"
                     >
-                        <WorkIcon className={classes.icons} /> Projects
+                        <WorkIcon className={classes.icons} />
+                        Projects
                     </Button>
                     <Button
                         className={classes.text}
@@ -100,7 +103,8 @@ function SideNavBar(props) {
                         component={RouterLink}
                         to="/education"
                     >
-                        <SchoolIcon className={classes.icons} /> Education
+                        <SchoolIcon className={classes.icons} />
+                        Education
                     </Button>
                     <Button
                         className={classes.text}
@@ -108,9 +112,9 @@ function SideNavBar(props) {
                         component={RouterLink}
                         to="/contact"
                     >
-                        <MailIcon className={classes.icons} /> Contact
+                        <MailIcon className={classes.icons} />
+                        Contact
                     </Button>
-                    {/* <ToggleMotion /> */}
                 </Grid>
             </div>
             <div>
