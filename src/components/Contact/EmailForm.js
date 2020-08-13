@@ -127,7 +127,8 @@ export default function EmailForm(props) {
                                 fullWidth
                                 id="Name"
                                 label="Name"
-                                name="Name"
+                                name="name"
+                                type="text"
                                 onChange={handleUsername}
                                 value={username}
                                 size="small"
@@ -136,7 +137,7 @@ export default function EmailForm(props) {
                                 variant="outlined"
                                 margin="normal"
                                 fullWidth
-                                name="Email"
+                                name="email"
                                 label="Email"
                                 type="email"
                                 id="Email"
@@ -150,7 +151,7 @@ export default function EmailForm(props) {
                                 rows={10}
                                 margin="normal"
                                 variant="outlined"
-                                name="Message"
+                                name="message"
                                 label="Message"
                                 type="text"
                                 id="Message"
