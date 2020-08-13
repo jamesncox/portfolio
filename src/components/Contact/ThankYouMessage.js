@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     card: {
         alignSelf: "center",
         margin: theme.spacing(2),
-        maxWidth: 800,
-        backgroundColor: "#eeeeee"
+        maxWidth: 400,
+        // backgroundColor: "#eeeeee"
     },
     header: {
         fontFamily: "'Varta', sans-serif",
