@@ -103,7 +103,6 @@ export default function EmailForm(props) {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", username, email, message })
         })
-        // .catch(error => alert(error));
 
         e.preventDefault()
         setOpen(true)
