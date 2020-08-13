@@ -40,6 +40,9 @@ body {
   transition: 0.6s;
   padding-top: 5rem;
   text-align: center;
+  display: -webkit-box;
+    -webkit-box-pack: center;
+    /* -webkit-box-align: center; */
 }
 
 .topnav {
