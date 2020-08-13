@@ -65,6 +65,12 @@ const useStyles = makeStyles((theme) => ({
     },
 }))
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
+
 export default function EmailForm(props) {
     const classes = useStyles();
 
@@ -91,6 +97,15 @@ export default function EmailForm(props) {
     }
 
     const handleSubmit = e => {
+
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", username, email, message })
+        })
+        // .then(() => alert("Success!"))
+        // .catch(error => alert(error));
+
         e.preventDefault()
         setOpen(true)
         setUsername('')
@@ -112,7 +127,7 @@ export default function EmailForm(props) {
                             onSubmit={e => handleSubmit(e)}
                             name="contact"
                         >
-                            <input type="hidden" name="form-name" value="contact" />
+                            {/* <input type="hidden" name="form-name" value="contact" /> */}
                             <TextField
                                 className={classes.formText}
                                 variant="outlined"
