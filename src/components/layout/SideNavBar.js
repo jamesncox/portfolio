@@ -35,7 +35,6 @@ const useStyles = makeStyles((theme) => ({
         position: "absolute",
         top: 8,
         right: "0",
-        // fontSize: "3.2rem",
         color: "#9e9e9e",
         marginRight: theme.spacing(1),
     },
@@ -49,9 +48,6 @@ const useStyles = makeStyles((theme) => ({
         zIndex: "1",
         top: 7,
         marginLeft: theme.spacing(1),
-    },
-    [theme.breakpoints.down('xs')]: {
-
     },
     openIcon: {
         fontSize: "2.5rem"

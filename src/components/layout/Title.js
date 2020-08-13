@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     title: {
-        marginTop: theme.spacing(10),
+        marginTop: theme.spacing(8),
         alignSelf: "center",
         fontSize: "3rem",
         fontWeight: "bold",
