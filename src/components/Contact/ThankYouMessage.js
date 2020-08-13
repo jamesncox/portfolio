@@ -30,12 +30,16 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function ThankYouMessage() {
+export default function ThankYouMessage(props) {
     const classes = useStyles();
     const [open, setOpen] = React.useState(true);
 
     const handleClose = () => {
-        setOpen(false);
+        setOpen(false)
+        props.setOpen(false)
+        props.setUsername("")
+        props.setEmail("")
+        props.setMessage("")
     };
 
     return (
@@ -49,7 +53,18 @@ export default function ThankYouMessage() {
                     </CardContent>
                     <CardContent>
                         <Typography className={classes.text}>
-                            Thank you for reaching out to me. I look forward to connecting with you and I will respond as soon possible!
+                            Thank you, {props.username}, for reaching out to me. I look forward to connecting with you and I will respond as soon possible!
+                        </Typography>
+                    </CardContent>
+                    <CardContent>
+                        <Typography className={classes.text}>
+                            Name: {props.username}
+                        </Typography>
+                        <Typography className={classes.text}>
+                            Email: {props.email}
+                        </Typography>
+                        <Typography className={classes.text}>
+                            Message: {props.message}
                         </Typography>
                     </CardContent>
                 </Card>

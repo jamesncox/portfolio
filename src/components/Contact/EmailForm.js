@@ -85,7 +85,6 @@ export default function EmailForm(props) {
 
     const handleUsername = (e) => {
         setUsername(e.target.value)
-        setOpen(false)
     }
 
     const handleEmail = (e) => {
@@ -106,14 +105,20 @@ export default function EmailForm(props) {
 
         e.preventDefault()
         setOpen(true)
-        setUsername('')
-        setEmail('')
-        setMessage('')
     }
 
     return (
         <>
-            {open === true ? <ThankYouMessage /> : null}
+            {open === true ?
+                <ThankYouMessage
+                    username={username}
+                    email={email}
+                    message={message}
+                    setOpen={setOpen}
+                    setUsername={setUsername}
+                    setEmail={setEmail}
+                    setMessage={setMessage}
+                /> : null}
             <Box className={classes.root}>
                 <Grid item xs={12} sm={12} md={5} component={Paper} >
                     <div className={classes.paper}>
