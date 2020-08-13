@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         margin: theme.spacing(2),
         maxWidth: 400,
-        // backgroundColor: "#eeeeee"
     },
     header: {
         fontFamily: "'Varta', sans-serif",
