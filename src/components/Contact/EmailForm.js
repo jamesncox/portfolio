@@ -103,7 +103,6 @@ export default function EmailForm(props) {
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", username, email, message })
         })
-        // .then(() => alert("Success!"))
         // .catch(error => alert(error));
 
         e.preventDefault()
@@ -127,7 +126,6 @@ export default function EmailForm(props) {
                             onSubmit={e => handleSubmit(e)}
                             name="contact"
                         >
-                            {/* <input type="hidden" name="form-name" value="contact" /> */}
                             <TextField
                                 className={classes.formText}
                                 variant="outlined"
