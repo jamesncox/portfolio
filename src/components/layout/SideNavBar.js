@@ -9,6 +9,8 @@ import PersonIcon from '@material-ui/icons/Person'
 import WorkIcon from '@material-ui/icons/Work'
 import SchoolIcon from '@material-ui/icons/School'
 import MailIcon from '@material-ui/icons/Mail'
+import CloseIcon from '@material-ui/icons/Close'
+import MenuIcon from '@material-ui/icons/Menu'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,24 +33,29 @@ const useStyles = makeStyles((theme) => ({
     },
     closeButton: {
         position: "absolute",
-        top: "-1rem",
+        top: 8,
         right: "0",
-        fontSize: "3.2rem",
+        // fontSize: "3.2rem",
         color: "#9e9e9e",
         marginRight: theme.spacing(1),
     },
+    closeIcon: {
+        fontSize: "2.5rem"
+    },
     openButton: {
-        fontSize: "2rem",
         cursor: "pointer",
         position: "fixed",
         color: "#9e9e9e",
         zIndex: "1",
-        marginTop: "-.55rem",
+        top: 7,
         marginLeft: theme.spacing(1),
     },
     [theme.breakpoints.down('xs')]: {
 
     },
+    openIcon: {
+        fontSize: "2.5rem"
+    }
 }));
 
 function SideNavBar(props) {
@@ -67,7 +74,7 @@ function SideNavBar(props) {
         <div className={classes.root}>
             <div id="mySidenav" className="sidenav" ref={navRef}>
                 <Button className={classes.closeButton} onClick={() => closeNav()}>
-                    &times;
+                    <CloseIcon className={classes.closeIcon} />
                 </Button>
                 <Grid container={true} direction="column" alignContent="center" alignItems="flex-start" item xs={12}>
                     <Button
@@ -118,7 +125,9 @@ function SideNavBar(props) {
                 </Grid>
             </div>
             <div>
-                <Button className={classes.openButton} onClick={() => openNav()}>&#9776; </Button>
+                <Button className={classes.openButton} onClick={() => openNav()}>
+                    <MenuIcon className={classes.openIcon} />
+                </Button>
             </div>
         </div>
     )
