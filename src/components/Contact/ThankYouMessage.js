@@ -21,13 +21,26 @@ const useStyles = makeStyles((theme) => ({
         fontFamily: "'Varta', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
-        fontWeight: "bold"
+        fontWeight: "bold",
+        marginBottom: "-1.5rem",
     },
     text: {
         fontFamily: "'Varta', sans-serif",
         color: "#212121",
         fontSize: "1.1rem",
     },
+    subheader: {
+        marginBottom: "-1.5rem",
+        fontFamily: "'Varta', sans-serif",
+        color: "#9e9e9e",
+        fontSize: "1.1rem",
+        fontWeight: "bold"
+    },
+    subtext: {
+        fontFamily: "'Varta', sans-serif",
+        color: "#9e9e9e",
+        fontSize: "1rem",
+    }
 }));
 
 export default function ThankYouMessage(props) {
@@ -57,13 +70,18 @@ export default function ThankYouMessage(props) {
                         </Typography>
                     </CardContent>
                     <CardContent>
-                        <Typography className={classes.text}>
+                        <Typography className={classes.subheader}>
+                            FROM YOU
+                        </Typography>
+                    </CardContent>
+                    <CardContent>
+                        <Typography className={classes.subtext}>
                             Name: {props.username}
                         </Typography>
-                        <Typography className={classes.text}>
+                        <Typography className={classes.subtext}>
                             Email: {props.email}
                         </Typography>
-                        <Typography className={classes.text}>
+                        <Typography className={classes.subtext}>
                             Message: {props.message}
                         </Typography>
                     </CardContent>
