@@ -19,14 +19,14 @@ import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: 600,
+        width: 800,
         alignSelf: "center",
-        marginTop: theme.spacing(2),
+        marginTop: theme.spacing(4),
         marginBottom: theme.spacing(2),
         '&:last-child': {
             marginBottom: theme.spacing(20)
         },
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             maxWidth: "92%",
         },
     },
@@ -105,14 +105,11 @@ export default function ProjectCards() {
             return (
                 <Card className={classes.root} key={project.id}>
                     <CardHeader
-                        // titleTypographyProps={classes.header}
                         disableTypography={true}
                         className={classes.header}
                         title={project.name}
-                    // subheader={project.summary}
                     />
                     <CardHeader
-                        // titleTypographyProps={classes.header}
                         disableTypography={true}
                         className={classes.subheader}
                         subheader={project.summary}
