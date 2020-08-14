@@ -13,9 +13,6 @@ import CloseIcon from '@material-ui/icons/Close'
 import MenuIcon from '@material-ui/icons/Menu'
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        // flexGrow: 1,
-    },
     icons: {
         marginRight: theme.spacing(2),
         fontSize: "2.5rem",
@@ -52,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     openIcon: {
         fontSize: "2.5rem"
     }
-}));
+}))
 
 function SideNavBar(props) {
     const classes = useStyles()
@@ -67,12 +64,11 @@ function SideNavBar(props) {
     }
 
     return (
-        <div className={classes.root}>
-            <div>
-                <Button className={classes.openButton} onClick={() => openNav()}>
-                    <MenuIcon className={classes.openIcon} />
-                </Button>
-            </div>
+        <>
+            <Button className={classes.openButton} onClick={() => openNav()}>
+                <MenuIcon className={classes.openIcon} />
+            </Button>
+
             <div id="mySidenav" className="sidenav" ref={navRef}>
                 <Button className={classes.closeButton} onClick={() => closeNav()}>
                     <CloseIcon className={classes.closeIcon} />
@@ -135,7 +131,7 @@ function SideNavBar(props) {
                     </Grid>
                 </Grid>
             </div>
-        </div >
+        </>
     )
 }
 
