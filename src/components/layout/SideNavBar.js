@@ -14,7 +14,7 @@ import MenuIcon from '@material-ui/icons/Menu'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1,
+        // flexGrow: 1,
     },
     icons: {
         marginRight: theme.spacing(2),
@@ -68,64 +68,74 @@ function SideNavBar(props) {
 
     return (
         <div className={classes.root}>
-            <div id="mySidenav" className="sidenav" ref={navRef}>
-                <Button className={classes.closeButton} onClick={() => closeNav()}>
-                    <CloseIcon className={classes.closeIcon} />
-                </Button>
-                <Grid container={true} direction="column" alignContent="center" alignItems="flex-start" item xs={12}>
-                    <Button
-                        className={classes.text}
-                        onClick={() => closeNav()}
-                        component={RouterLink}
-                        to="/"
-                    >
-                        <HomeIcon className={classes.icons} />
-                        Home
-                    </Button>
-                    <Button
-                        className={classes.text}
-                        onClick={() => closeNav()}
-                        component={RouterLink}
-                        to="/about"
-                    >
-                        <PersonIcon className={classes.icons} />
-                        About
-                    </Button>
-                    <Button
-                        className={classes.text}
-                        onClick={() => closeNav()}
-                        component={RouterLink}
-                        to="/projects"
-                    >
-                        <WorkIcon className={classes.icons} />
-                        Projects
-                    </Button>
-                    <Button
-                        className={classes.text}
-                        onClick={() => closeNav()}
-                        component={RouterLink}
-                        to="/education"
-                    >
-                        <SchoolIcon className={classes.icons} />
-                        Education
-                    </Button>
-                    <Button
-                        className={classes.text}
-                        onClick={() => closeNav()}
-                        component={RouterLink}
-                        to="/contact"
-                    >
-                        <MailIcon className={classes.icons} />
-                        Contact
-                    </Button>
-                </Grid>
-            </div>
             <div>
                 <Button className={classes.openButton} onClick={() => openNav()}>
                     <MenuIcon className={classes.openIcon} />
                 </Button>
             </div>
-        </div>
+            <div id="mySidenav" className="sidenav" ref={navRef}>
+                <Button className={classes.closeButton} onClick={() => closeNav()}>
+                    <CloseIcon className={classes.closeIcon} />
+                </Button>
+                <Grid container={true} alignContent="center" direction="column" alignItems="flex-start">
+                    <Grid item xs={12}>
+                        <Button
+                            className={classes.text}
+                            onClick={() => closeNav()}
+                            component={RouterLink}
+                            to="/"
+                        >
+                            <HomeIcon className={classes.icons} />
+                            Home
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button
+                            className={classes.text}
+                            onClick={() => closeNav()}
+                            component={RouterLink}
+                            to="/about"
+                        >
+                            <PersonIcon className={classes.icons} />
+                            About
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button
+                            className={classes.text}
+                            onClick={() => closeNav()}
+                            component={RouterLink}
+                            to="/projects"
+                        >
+                            <WorkIcon className={classes.icons} />
+                            Projects
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button
+                            className={classes.text}
+                            onClick={() => closeNav()}
+                            component={RouterLink}
+                            to="/education"
+                        >
+                            <SchoolIcon className={classes.icons} />
+                            Education
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button
+                            className={classes.text}
+                            onClick={() => closeNav()}
+                            component={RouterLink}
+                            to="/contact"
+                        >
+                            <MailIcon className={classes.icons} />
+                            Contact
+                        </Button>
+                    </Grid>
+                </Grid>
+            </div>
+        </div >
     )
 }
 
