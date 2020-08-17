@@ -32,10 +32,12 @@ const useStyles = makeStyles((theme) => ({
     card: {
         alignSelf: "center",
         margin: theme.spacing(2),
+        paddingRight: theme.spacing(1),
         maxWidth: 450,
         height: 125,
         [theme.breakpoints.down('sm')]: {
-            height: 100
+            height: 100,
+            paddingRight: theme.spacing(3),
         },
     },
     github: {
@@ -57,6 +59,16 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             fontSize: "3rem"
         },
+    },
+    dev: {
+        marginTop: ".2rem",
+        height: "4rem",
+        width: "4rem",
+        [theme.breakpoints.down('sm')]: {
+            height: "3rem",
+            width: "3rem",
+            marginTop: 0
+        },
     }
 }))
 
@@ -65,8 +77,8 @@ export default function Social() {
 
     return (
         <Card className={classes.card}>
-            <Grid container spacing={3}>
-                <Grid item xs={4}>
+            <Grid container spacing={0}>
+                <Grid item xs={3}>
                     <CardContent className={classes.content}>
                         <IconButton className={classes.text}>
                             <Link
@@ -81,7 +93,7 @@ export default function Social() {
                         </IconButton>
                     </CardContent>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                     <CardContent >
                         <IconButton className={classes.text}>
                             <Link
@@ -96,7 +108,7 @@ export default function Social() {
                         </IconButton>
                     </CardContent>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                     <CardContent >
                         <IconButton className={classes.text}>
                             <Link
@@ -111,7 +123,22 @@ export default function Social() {
                         </IconButton>
                     </CardContent>
                 </Grid>
+                <Grid item xs={3}>
+                    <CardContent >
+                        <IconButton className={classes.text}>
+                            <Link
+                                color="inherit"
+                                underline="none"
+                                rel="noopener noreferrer"
+                                href="https://dev.to/jamesncox"
+                                target="_blank"
+                            >
+                                <img className={classes.dev} src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="James Cox's DEV Profile" height="30" width="30" />
+                            </Link>
+                        </IconButton>
+                    </CardContent>
+                </Grid>
             </Grid>
-        </Card>
+        </Card >
     )
 }
