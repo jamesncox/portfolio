@@ -7,3 +7,5 @@
 [] Lazy-load images
 
 [] THAT DAMN MENU NOT BEING CENTERED ON IOS!!
+
+[] Create a BLOG section and feature my new DEV blog posts
