@@ -11,6 +11,7 @@ import SchoolIcon from '@material-ui/icons/School'
 import MailIcon from '@material-ui/icons/Mail'
 import CloseIcon from '@material-ui/icons/Close'
 import MenuIcon from '@material-ui/icons/Menu'
+import CreateIcon from '@material-ui/icons/Create';
 
 const useStyles = makeStyles((theme) => ({
     icons: {
@@ -127,6 +128,17 @@ function SideNavBar(props) {
                         >
                             <MailIcon className={classes.icons} />
                             Contact
+                        </Button>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Button
+                            className={classes.text}
+                            onClick={() => closeNav()}
+                            component={RouterLink}
+                            to="/blog"
+                        >
+                            <CreateIcon className={classes.icons} />
+                            Blog
                         </Button>
                     </Grid>
                 </Grid>
