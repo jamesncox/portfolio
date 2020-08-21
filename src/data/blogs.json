@@ -4,7 +4,7 @@
         "logo": "devto.png",
         "name": "React Hooks Series: useState",
         "image": "useState screenshot.jpg",
-        "summary": "Part one in my React Hooks Series. I examine the useState hook in a basic timer app with examples from Codesandbox",
+        "summary": "Part one in my React Hooks Series. I examine the useState hook in a basic timer app with examples from Codesandbox.",
         "url": "https://dev.to/jamesncox/react-hooks-series-usestate-12ne"
     },
     {
@@ -12,7 +12,7 @@
         "logo": "devto.png",
         "name": "React Hooks Series: useEffect",
         "image": "useEffect screenshot.jpg",
-        "summary": "Part two in my React Hooks Series takes a look at the useEffect hook and how I implememnt in a small timer app I created in Codesandbox",
+        "summary": "Part two in my React Hooks Series takes a look at the useEffect hook and how I implememnt in a small timer app I created in Codesandbox.",
         "url": "https://dev.to/jamesncox/react-hook-series-useeffect-in2"
     },
     {
@@ -20,7 +20,7 @@
         "logo": "devto.png",
         "name": "React Hooks Series: useRef",
         "image": "useRef screenshot.jpg",
-        "summary": "Part three in the React Hooks Series talks about my personal favorite hook: useRef. We look at how useRef solves a problem with pausing and starting the timer in my Codesandbox example",
+        "summary": "Part three in the React Hooks Series talks about my personal favorite hook: useRef. We look at how useRef solves a problem with pausing and starting the timer in my Codesandbox example.",
         "url": "https://dev.to/jamesncox/react-hooks-series-useref-27mk"
     },
     {
@@ -30,5 +30,13 @@
         "image": "home office.jpg",
         "summary": "Are you working from home? If you are like me, you don't have an awesome setup (YET) and you are making the best with what you've got. And that is okay!",
         "url": "https://dev.to/jamesncox/home-office-5kn"
+    },
+    {
+        "id": 206,
+        "logo": "mediumlogo.png",
+        "name": "My Embarrasing Rails CORS Story",
+        "image": "CORS errors screenshot cropped.jpg",
+        "summary": "You have probably already encountered one of every developer's worst nightmares: BLOCKED BY CORS. I detail how I spent hours trying to figure out why my Rails API kept blocking and the embarrasing reason.",
+        "url": "https://medium.com/@jamesncox/my-embarrasing-rails-cors-story-e66a8db2c5e6"
     }
 ]
