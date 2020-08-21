@@ -124,10 +124,10 @@ function SideNavBar(props) {
                             className={classes.text}
                             onClick={() => closeNav()}
                             component={RouterLink}
-                            to="/contact"
+                            to="/blog"
                         >
-                            <MailIcon className={classes.icons} />
-                            Contact
+                            <CreateIcon className={classes.icons} />
+                            Blog
                         </Button>
                     </Grid>
                     <Grid item xs={12}>
@@ -135,10 +135,10 @@ function SideNavBar(props) {
                             className={classes.text}
                             onClick={() => closeNav()}
                             component={RouterLink}
-                            to="/blog"
+                            to="/contact"
                         >
-                            <CreateIcon className={classes.icons} />
-                            Blog
+                            <MailIcon className={classes.icons} />
+                            Contact
                         </Button>
                     </Grid>
                 </Grid>
