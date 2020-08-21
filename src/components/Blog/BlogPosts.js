@@ -33,7 +33,10 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         fontWeight: "bold",
-        fontSize: "2rem"
+        fontSize: "1.5rem",
+        [theme.breakpoints.down('sm')]: {
+            fontSize: "1.25rem"
+        },
     }
 }));
 
@@ -53,8 +56,8 @@ export default function BlogPosts() {
                         avatar={
                             <Avatar aria-label="blog type" src={img(`./${blog.logo}`)} className={classes.large} />
                         }
-                        title={blog.name}
-                        className={classes.title}
+                    // title={blog.name}
+                    // titleTypographyProps={{ variant: 'h6' }}
                     />
                     <Link
                         color="inherit"
@@ -70,6 +73,9 @@ export default function BlogPosts() {
                                 title={blog.name}
                             />
                             <CardContent>
+                                <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
+                                    {blog.name}
+                                </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     {blog.summary}
                                 </Typography>
