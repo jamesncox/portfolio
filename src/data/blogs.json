@@ -32,6 +32,14 @@
         "url": "https://dev.to/jamesncox/home-office-5kn"
     },
     {
+        "id": 205,
+        "logo": "mediumlogo.png",
+        "name": "Keeping A User In Session",
+        "image": "reactrails.jpg",
+        "summary": "My solution for keeping a user in session (not having to resign in every time), even when the page is refreshed, for a Rails backend and React frontend application.",
+        "url": "https://medium.com/@jamesncox/keeping-a-user-in-session-with-react-and-rails-c62e37a495c2"
+    },
+    {
         "id": 206,
         "logo": "mediumlogo.png",
         "name": "My Embarrasing Rails CORS Story",
