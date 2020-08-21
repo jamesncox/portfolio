@@ -1,9 +1,18 @@
 [
     {
         "id": 201,
-        "name": "",
-        "image": "",
-        "summary": "",
-        "url": ""
+        "logo": "devto.png",
+        "name": "React Hooks Series: useState",
+        "image": "useState screenshot.jpg",
+        "summary": "Part one in my React Hooks Series. I examine the useState hook in a basic timer app with examples from Codesandbox",
+        "url": "https://dev.to/jamesncox/react-hooks-series-usestate-12ne"
+    },
+    {
+        "id": 202,
+        "logo": "devto.png",
+        "name": "React Hooks Series: useEffect",
+        "image": "useEffect screenshot.jpg",
+        "summary": "Part two in my React Hooks Series takes a look at the useEffect hook and how I implememnt in a small timer app I created in Codesandbox",
+        "url": "https://dev.to/jamesncox/react-hook-series-useeffect-in2"
     }
 ]

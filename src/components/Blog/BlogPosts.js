@@ -9,6 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
 import CardHeader from '@material-ui/core/CardHeader';
+import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -17,41 +18,66 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(2)
     },
     media: {
-        height: 140,
+        height: 250,
+        [theme.breakpoints.down('sm')]: {
+            height: 140
+        },
     },
+    large: {
+        width: theme.spacing(8),
+        height: theme.spacing(8),
+        [theme.breakpoints.down('xs')]: {
+            width: theme.spacing(6),
+            height: theme.spacing(6),
+        },
+    },
+    title: {
+        fontWeight: "bold",
+        fontSize: "2rem"
+    }
 }));
 
 export default function BlogPosts() {
     const classes = useStyles()
+    const img = require.context('../../assets/images/', true)
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
 
     return (
-        <Card className={classes.root}>
-            <CardHeader
-                avatar={
-                    <Avatar aria-label="recipe" className={classes.avatar}>
-                        R
-                    </Avatar>
-                }
-                title="Shrimp and Chorizo Paella"
-            />
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image="/static/images/cards/contemplative-reptile.jpg"
-                    title="Contemplative Reptile"
-                />
-                <CardContent>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-                        across all continents except Antarctica
-          </Typography>
-                </CardContent>
-            </CardActionArea>
-
-        </Card>
-    );
+        BlogData.map(blog => {
+            return (
+                <Card className={classes.root} key={blog.id}>
+                    <CardHeader
+                        avatar={
+                            <Avatar aria-label="blog type" src={img(`./${blog.logo}`)} className={classes.large} />
+                        }
+                        title={blog.name}
+                        className={classes.title}
+                    />
+                    <Link
+                        color="inherit"
+                        underline="none"
+                        rel="noopener noreferrer"
+                        href={blog.url}
+                        target="_blank"
+                    >
+                        <CardActionArea>
+                            <CardMedia
+                                className={classes.media}
+                                image={img(`./${blog.image}`)}
+                                title={blog.name}
+                            />
+                            <CardContent>
+                                <Typography variant="body2" color="textSecondary" component="p">
+                                    {blog.summary}
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Link>
+                </Card >
+            )
+        })
+    )
 }
