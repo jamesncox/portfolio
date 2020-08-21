@@ -13,7 +13,7 @@ import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 800,
+        maxWidth: 600,
         alignSelf: "center",
         margin: theme.spacing(2)
     },
@@ -32,11 +32,15 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     title: {
-        fontWeight: "bold",
+        fontFamily: "'Varta', sans-serif",
         fontSize: "1.5rem",
         [theme.breakpoints.down('sm')]: {
-            fontSize: "1.25rem"
+            fontSize: "1.3rem"
         },
+    },
+    summary: {
+        fontSize: "1rem",
+        fontFamily: "'Varta', sans-serif",
     }
 }));
 
@@ -76,7 +80,7 @@ export default function BlogPosts() {
                                 <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
                                     {blog.name}
                                 </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p">
+                                <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
                                     {blog.summary}
                                 </Typography>
                             </CardContent>
