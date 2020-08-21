@@ -22,5 +22,13 @@
         "image": "useRef screenshot.jpg",
         "summary": "Part three in the React Hooks Series talks about my personal favorite hook: useRef. We look at how useRef solves a problem with pausing and starting the timer in my Codesandbox example",
         "url": "https://dev.to/jamesncox/react-hooks-series-useref-27mk"
+    },
+    {
+        "id": 204,
+        "logo": "devto.png",
+        "name": "Home 'Office'",
+        "image": "home office.jpg",
+        "summary": "Are you working from home? If you are like me, you don't have an awesome setup (YET) and you are making the best with what you've got. And that is okay!",
+        "url": "https://dev.to/jamesncox/home-office-5kn"
     }
 ]
