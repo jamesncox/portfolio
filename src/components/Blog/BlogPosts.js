@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import BlogData from '../../data/blogs.json'
+
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -20,7 +22,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function BlogPosts() {
-    const classes = useStyles();
+    const classes = useStyles()
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     return (
         <Card className={classes.root}>
