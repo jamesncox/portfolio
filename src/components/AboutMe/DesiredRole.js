@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: "1.1rem",
         marginTop: theme.spacing(2),
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".9rem"
+            fontSize: "1rem"
         },
     },
     text: {
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#212121",
         fontSize: "1.1rem",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".9rem"
+            fontSize: "1rem"
         },
     },
     card: {

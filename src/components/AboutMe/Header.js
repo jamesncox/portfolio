@@ -12,11 +12,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#f50057",
         [theme.breakpoints.down('sm')]: {
             fontSize: "1.75rem",
-            // marginTop: theme.spacing(1)
         },
-        // [theme.breakpoints.down('xs')]: {
-        //     fontSize: "1.5rem",
-        // }
     },
 }));
 
