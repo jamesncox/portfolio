@@ -70,21 +70,10 @@ const useStyles = makeStyles((theme) => ({
     },
     subheader: {
         fontFamily: "'Varta', sans-serif",
-        // [theme.breakpoints.down('xs')]: {
-        //     fontSize: "1rem"
-        // },
     },
     iconText: {
         fontSize: ".9rem",
-        // [theme.breakpoints.down('xs')]: {
-        //     fontSize: ".8rem"
-        // },
     },
-    icon: {
-        // [theme.breakpoints.down('xs')]: {
-        //     fontSize: "1.2rem"
-        // },
-    }
 }));
 
 export default function ProjectCards() {
@@ -129,7 +118,7 @@ export default function ProjectCards() {
                                 href={project.github}
                                 target="_blank"
                             >
-                                <GitHubIcon className={classes.icon} />
+                                <GitHubIcon />
                             </Link>
                             <Link
                                 className={classes.linkText}
@@ -151,7 +140,7 @@ export default function ProjectCards() {
                                 href={project.url}
                                 target="_blank"
                             >
-                                <DesktopWindowsIcon className={classes.icon} />
+                                <DesktopWindowsIcon />
                             </Link>
                             <Link
                                 className={classes.linkText}
