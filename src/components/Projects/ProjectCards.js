@@ -70,9 +70,9 @@ const useStyles = makeStyles((theme) => ({
     },
     subheader: {
         fontFamily: "'Varta', sans-serif",
-        [theme.breakpoints.down('xs')]: {
-            fontSize: "1rem"
-        },
+        // [theme.breakpoints.down('xs')]: {
+        //     fontSize: "1rem"
+        // },
     },
     iconText: {
         fontSize: ".9rem",
