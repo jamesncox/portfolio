@@ -76,14 +76,14 @@ const useStyles = makeStyles((theme) => ({
     },
     iconText: {
         fontSize: ".9rem",
-        [theme.breakpoints.down('xs')]: {
-            fontSize: ".8rem"
-        },
+        // [theme.breakpoints.down('xs')]: {
+        //     fontSize: ".8rem"
+        // },
     },
     icon: {
-        [theme.breakpoints.down('xs')]: {
-            fontSize: "1.2rem"
-        },
+        // [theme.breakpoints.down('xs')]: {
+        //     fontSize: "1.2rem"
+        // },
     }
 }));
 
