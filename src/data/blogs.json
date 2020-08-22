@@ -26,13 +26,21 @@
     {
         "id": 204,
         "logo": "devto.png",
+        "name": "React Patterns: Local API",
+        "image": "powerful people ss.jpg",
+        "summary": "A new series on my personal React patterns, where I talk about how and why I simulate a local JSON API in my React applications. What is An API? What is JSON? Find out in this article!",
+        "url": "https://dev.to/jamesncox/react-patterns-local-api-495j"
+    },
+    {
+        "id": 205,
+        "logo": "devto.png",
         "name": "Home 'Office'",
         "image": "home office.jpg",
         "summary": "Are you working from home? If you are like me, you don't have an awesome setup (YET) and you are making the best with what you've got. And that is okay!",
         "url": "https://dev.to/jamesncox/home-office-5kn"
     },
     {
-        "id": 205,
+        "id": 206,
         "logo": "mediumlogo.png",
         "name": "Keeping A User In Session",
         "image": "reactrails.jpg",
@@ -40,7 +48,7 @@
         "url": "https://medium.com/@jamesncox/keeping-a-user-in-session-with-react-and-rails-c62e37a495c2"
     },
     {
-        "id": 206,
+        "id": 207,
         "logo": "mediumlogo.png",
         "name": "My Embarrasing Rails CORS Story",
         "image": "CORS errors screenshot cropped.jpg",
