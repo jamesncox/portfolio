@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
         alignSelf: "center",
         margin: theme.spacing(2),
         width: 800,
-        // backgroundColor: "#eeeeee",
         '&:last-child': {
             marginBottom: theme.spacing(20)
         },
@@ -36,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#212121",
         fontSize: "1.1rem",
         [theme.breakpoints.down('xs')]: {
-            fontSize: ".9rem"
+            fontSize: "1rem"
         },
     },
     school: {
@@ -45,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
         color: "#212121",
         fontSize: "1.5rem",
         [theme.breakpoints.down('xs')]: {
-            fontSize: "1rem"
+            fontSize: "1.25rem"
         },
     }
 }));
