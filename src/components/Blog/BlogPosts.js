@@ -60,8 +60,6 @@ export default function BlogPosts() {
                         avatar={
                             <Avatar aria-label="blog type" src={img(`./${blog.logo}`)} className={classes.large} />
                         }
-                    // title={blog.name}
-                    // titleTypographyProps={{ variant: 'h6' }}
                     />
                     <Link
                         color="inherit"
