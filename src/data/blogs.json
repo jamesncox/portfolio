@@ -34,13 +34,21 @@
     {
         "id": 205,
         "logo": "devto.png",
+        "name": "Flexbox Rocks!",
+        "image": "excalidraw card rows mockup.jpg",
+        "summary": "I explore how I use Flexbox to create a simple card layout and display the cards in either rows or a column depending on the screen size, highlighting how to use CSS media queries.",
+        "url": "https://dev.to/jamesncox/flexbox-rocks-2bf9"
+    },
+    {
+        "id": 206,
+        "logo": "devto.png",
         "name": "Home 'Office'",
         "image": "home office.jpg",
         "summary": "Are you working from home? If you are like me, you don't have an awesome setup (YET) and you are making the best with what you've got. And that is okay!",
         "url": "https://dev.to/jamesncox/home-office-5kn"
     },
     {
-        "id": 206,
+        "id": 207,
         "logo": "mediumlogo.png",
         "name": "Keeping A User In Session",
         "image": "reactrails.jpg",
@@ -48,7 +56,7 @@
         "url": "https://medium.com/@jamesncox/keeping-a-user-in-session-with-react-and-rails-c62e37a495c2"
     },
     {
-        "id": 207,
+        "id": 208,
         "logo": "mediumlogo.png",
         "name": "My Embarrasing Rails CORS Story",
         "image": "CORS errors screenshot cropped.jpg",
