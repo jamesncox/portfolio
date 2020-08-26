@@ -37,3 +37,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
