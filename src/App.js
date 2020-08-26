@@ -1,5 +1,6 @@
 import React from 'react';
 import './Stylesheets/App.css'
+import './Stylesheets/Responsive.css'
 import Main from './components/layout/Main'
 
 function App() {
