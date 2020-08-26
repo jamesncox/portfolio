@@ -19,15 +19,16 @@ import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: 800,
+        width: 500,
         alignSelf: "center",
-        marginTop: theme.spacing(4),
-        marginBottom: theme.spacing(2),
-        '&:last-child': {
-            marginBottom: theme.spacing(20)
-        },
-        [theme.breakpoints.down('md')]: {
+        margin: theme.spacing(2),
+        // marginTop: theme.spacing(4),
+        // marginBottom: theme.spacing(2),
+        [theme.breakpoints.down('xs')]: {
             maxWidth: "92%",
+            '&:last-child': {
+                marginBottom: theme.spacing(15)
+            },
         },
     },
     media: {
