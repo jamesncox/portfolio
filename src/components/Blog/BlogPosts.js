@@ -19,10 +19,8 @@ const useStyles = makeStyles((theme) => ({
         margin: theme.spacing(2),
     },
     media: {
-        height: 140,
-        [theme.breakpoints.down('sm')]: {
-            height: 140
-        },
+        height: 0,
+        paddingTop: '36.25%',
     },
     large: {
         width: theme.spacing(8),

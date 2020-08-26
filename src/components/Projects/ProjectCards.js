@@ -90,92 +90,94 @@ export default function ProjectCards() {
     }
 
     return (
-        ProjectData.map(project => {
-            return (
-                <Card className={classes.root} key={project.id}>
-                    <CardHeader
-                        disableTypography={true}
-                        className={classes.header}
-                        title={project.name}
-                    />
-                    <CardHeader
-                        disableTypography={true}
-                        className={classes.subheader}
-                        subheader={project.summary}
-                    />
-                    <CardMedia
-                        className={classes.media}
-                        image={img(`./${project.image}`)}
-                        title={project.name}
-                    />
-                    <CardActions disableSpacing>
-                        <Button>
-                            <Link
-                                className={classes.link}
-                                color="inherit"
-                                underline="none"
-                                rel="noopener noreferrer"
-                                href={project.github}
-                                target="_blank"
+        <div className="wrapper">
+            {ProjectData.map(project => {
+                return (
+                    <Card className={classes.root} key={project.id}>
+                        <CardHeader
+                            disableTypography={true}
+                            className={classes.header}
+                            title={project.name}
+                        />
+                        <CardHeader
+                            disableTypography={true}
+                            className={classes.subheader}
+                            subheader={project.summary}
+                        />
+                        <CardMedia
+                            className={classes.media}
+                            image={img(`./${project.image}`)}
+                            title={project.name}
+                        />
+                        <CardActions disableSpacing>
+                            <Button>
+                                <Link
+                                    className={classes.link}
+                                    color="inherit"
+                                    underline="none"
+                                    rel="noopener noreferrer"
+                                    href={project.github}
+                                    target="_blank"
+                                >
+                                    <GitHubIcon />
+                                </Link>
+                                <Link
+                                    className={classes.linkText}
+                                    color="inherit"
+                                    underline="none"
+                                    rel="noopener noreferrer"
+                                    href={project.github}
+                                    target="_blank"
+                                >
+                                    <Typography className={classes.iconText}>Github</Typography>
+                                </Link>
+                            </Button>
+                            <Button>
+                                <Link
+                                    className={classes.link}
+                                    color="inherit"
+                                    underline="none"
+                                    rel="noopener noreferrer"
+                                    href={project.url}
+                                    target="_blank"
+                                >
+                                    <DesktopWindowsIcon />
+                                </Link>
+                                <Link
+                                    className={classes.linkText}
+                                    color="inherit"
+                                    underline="none"
+                                    rel="noopener noreferrer"
+                                    href={project.url}
+                                    target="_blank"
+                                >
+                                    <Typography className={classes.iconText}>Live Site</Typography>
+                                </Link>
+                            </Button>
+                            <IconButton
+                                className={clsx(classes.expand, {
+                                    [classes.expandOpen]: expanded === project.id,
+                                })}
+                                onClick={() => handleExpandClick(project.id)}
+                                aria-expanded={expanded === project.id}
+                                aria-label="show more"
                             >
-                                <GitHubIcon />
-                            </Link>
-                            <Link
-                                className={classes.linkText}
-                                color="inherit"
-                                underline="none"
-                                rel="noopener noreferrer"
-                                href={project.github}
-                                target="_blank"
-                            >
-                                <Typography className={classes.iconText}>Github</Typography>
-                            </Link>
-                        </Button>
-                        <Button>
-                            <Link
-                                className={classes.link}
-                                color="inherit"
-                                underline="none"
-                                rel="noopener noreferrer"
-                                href={project.url}
-                                target="_blank"
-                            >
-                                <DesktopWindowsIcon />
-                            </Link>
-                            <Link
-                                className={classes.linkText}
-                                color="inherit"
-                                underline="none"
-                                rel="noopener noreferrer"
-                                href={project.url}
-                                target="_blank"
-                            >
-                                <Typography className={classes.iconText}>Live Site</Typography>
-                            </Link>
-                        </Button>
-                        <IconButton
-                            className={clsx(classes.expand, {
-                                [classes.expandOpen]: expanded === project.id,
-                            })}
-                            onClick={() => handleExpandClick(project.id)}
-                            aria-expanded={expanded === project.id}
-                            aria-label="show more"
-                        >
-                            <ExpandMoreIcon />
-                        </IconButton>
-                    </CardActions>
-                    <Collapse in={expanded === project.id} timeout="auto" unmountOnExit>
-                        <CardContent>
-                            <Typography className={classes.subheader} color="textSecondary" component="p">
-                                {project.description}
-                            </Typography>
-                            <Typography className={classes.technologies}>
-                                {project.technologies.join(', ')}
-                            </Typography>
-                        </CardContent>
-                    </Collapse>
-                </Card>
-            )
-        })
+                                <ExpandMoreIcon />
+                            </IconButton>
+                        </CardActions>
+                        <Collapse in={expanded === project.id} timeout="auto" unmountOnExit>
+                            <CardContent>
+                                <Typography className={classes.subheader} color="textSecondary" component="p">
+                                    {project.description}
+                                </Typography>
+                                <Typography className={classes.technologies}>
+                                    {project.technologies.join(', ')}
+                                </Typography>
+                            </CardContent>
+                        </Collapse>
+                    </Card>
+                )
+            })}
+        </div>
     );
 }
