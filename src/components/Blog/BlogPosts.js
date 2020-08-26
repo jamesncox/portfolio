@@ -13,12 +13,13 @@ import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: 600,
+        maxWidth: 400,
+        height: "25rem",
         alignSelf: "center",
-        margin: theme.spacing(2)
+        margin: theme.spacing(2),
     },
     media: {
-        height: 250,
+        height: 140,
         [theme.breakpoints.down('sm')]: {
             height: 140
         },
@@ -53,39 +54,41 @@ export default function BlogPosts() {
     }, [])
 
     return (
-        BlogData.map(blog => {
-            return (
-                <Card className={classes.root} key={blog.id}>
-                    <CardHeader
-                        avatar={
-                            <Avatar aria-label="blog type" src={img(`./${blog.logo}`)} className={classes.large} />
-                        }
-                    />
-                    <Link
-                        color="inherit"
-                        underline="none"
-                        rel="noopener noreferrer"
-                        href={blog.url}
-                        target="_blank"
-                    >
-                        <CardActionArea>
-                            <CardMedia
-                                className={classes.media}
-                                image={img(`./${blog.image}`)}
-                                title={blog.name}
-                            />
-                            <CardContent>
-                                <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
-                                    {blog.name}
-                                </Typography>
-                                <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
-                                    {blog.summary}
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
-                    </Link>
-                </Card >
-            )
-        })
+        <div className="wrapper">
+            {BlogData.map(blog => {
+                return (
+                    <Card className={classes.root} key={blog.id}>
+                        <CardHeader
+                            avatar={
+                                <Avatar aria-label="blog type" src={img(`./${blog.logo}`)} className={classes.large} />
+                            }
+                        />
+                        <Link
+                            color="inherit"
+                            underline="none"
+                            rel="noopener noreferrer"
+                            href={blog.url}
+                            target="_blank"
+                        >
+                            <CardActionArea>
+                                <CardMedia
+                                    className={classes.media}
+                                    image={img(`./${blog.image}`)}
+                                    title={blog.name}
+                                />
+                                <CardContent>
+                                    <Typography gutterBottom variant="h5" component="h2" className={classes.title}>
+                                        {blog.name}
+                                    </Typography>
+                                    <Typography variant="body2" color="textSecondary" component="p" className={classes.summary}>
+                                        {blog.summary}
+                                    </Typography>
+                                </CardContent>
+                            </CardActionArea>
+                        </Link>
+                    </Card >
+                )
+            })}
+        </div>
     )
 }
