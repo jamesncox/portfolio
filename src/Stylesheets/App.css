@@ -31,3 +31,9 @@ body {
   z-index: 1;
   overflow: hidden;
 }
+
+/* Make BlogPosts.js Responsive Flexbox Layout */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
