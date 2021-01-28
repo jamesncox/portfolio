@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "THE BOREDINATOR",
-        "image": "",
+        "image": "boredinator-portfolio-alt.jpg",
         "summary": "Activities and inspiration to stave off boredom",
         "description": "Feeling bored? Don't know what to do? Let The Boredinator inspire you to try new and fun activities. Find an activity by category or get a totally random activity, if you're feeling brave! Featuring: Light/Dark theme toggle with localStorage to save user's preference on page reload; CSS variables for efficient light and dark theme management; State management with Redux; CSS-only design, no CSS libraries; Custom, reusable Hook called ImageLoad to lazy load images; Custom JSON data objects, simulating a local API; Separate and reusable components",
         "github": "https://github.com/jamesncox/the-boredinator",
