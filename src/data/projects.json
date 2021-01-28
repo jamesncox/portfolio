@@ -1,6 +1,21 @@
 [
     {
         "id": 1,
+        "name": "THE BOREDINATOR",
+        "image": "",
+        "summary": "Activities and inspiration to stave off boredom",
+        "description": "Feeling bored? Don't know what to do? Let The Boredinator inspire you to try new and fun activities. Find an activity by category or get a totally random activity, if you're feeling brave! Featuring: Light/Dark theme toggle with localStorage to save user's preference on page reload; CSS variables for efficient light and dark theme management; State management with Redux; CSS-only design, no CSS libraries; Custom, reusable Hook called ImageLoad to lazy load images; Custom JSON data objects, simulating a local API; Separate and reusable components",
+        "github": "https://github.com/jamesncox/the-boredinator",
+        "url": "https://boredinator.netlify.app/",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "Redux",
+            "CSS"
+        ]
+    },
+    {
+        "id": 2,
         "name": "GIF FIT",
         "image": "gif fit resized collage.jpg",
         "github": "https://github.com/jamesncox/gif-fit",
@@ -15,7 +30,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "DO DID DONE",
         "image": "do did done collage.jpg",
         "github": "https://github.com/jamesncox/do-did-done-react",
@@ -30,7 +45,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "BUY / WHERE",
         "image": "buy where collage.jpg",
         "github": "https://github.com/jamesncox/what-where-react",
@@ -45,7 +60,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "MEMES VS GIFS",
         "image": "mvg new ss.jpg",
         "summary": "(Desktop only) A meme and gif generator",
@@ -60,7 +75,7 @@
         ]
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "MATH MASTER",
         "image": "new math master ss.jpg",
         "summary": "Math app for elementary students",
@@ -75,7 +90,7 @@
         ]
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "KIDTIONARY",
         "image": "kidtionary large ss.jpg",
         "summary": "Dictionary designed for young readers",
